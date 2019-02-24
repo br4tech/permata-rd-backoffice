@@ -25,6 +25,7 @@ import { ConfiguracaoComponent } from './screen/configuracao/configuracao.compon
 import { SidebarAcaoComponent } from './shared/sidebar-acao/sidebar-acao.component';
 import { SidebarMenuComponent } from './shared/sidebar-menu/sidebar-menu.component';
 import { SidebarFiltroComponent } from './shared/sidebar-filtro/sidebar-filtro.component';
+import { SidebarRelatoriosComponent } from './shared/sidebar-relatorios/sidebar-relatorios.component';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { SidebarFiltroComponent } from './shared/sidebar-filtro/sidebar-filtro.c
     ConfiguracaoComponent,
     SidebarAcaoComponent,
     SidebarMenuComponent,
-    SidebarFiltroComponent
+    SidebarFiltroComponent,
+    SidebarRelatoriosComponent
   ],
   imports: [
     BrowserModule,

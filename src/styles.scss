@@ -23,10 +23,6 @@ body{
     display: flex!important;
 }
 
-.p-4 {
-    padding-bottom: 1rem!important;
-}
-
 .ml-auto, .mx-auto {
     margin-left: auto!important;
 }
@@ -122,7 +118,7 @@ body{
 
 .mt-1,
 .my-1 {
-    margin-top: 0.25rem !important;
+    margin-top: 1px !important;
   }
 
 .avatar {
@@ -152,12 +148,17 @@ body{
     vertical-align: sub;
   }
 
+.dropdown-toggle::after {
+    display:none;
+}
+
 /* ####################################### SIDEBAR ######################################################*/
 
 .s-card{
-   border-top: 1px solid #DC7D2C;
-   padding: 5px; 
+   border-top: 1px solid rgba(79,79,60,.2);
+   padding: 30px; 
    width: 100% !important;
+   background: #ffff;
 }
 
 .card-title {
