@@ -26,6 +26,12 @@ import { SidebarAcaoComponent } from './shared/sidebar-acao/sidebar-acao.compone
 import { SidebarMenuComponent } from './shared/sidebar-menu/sidebar-menu.component';
 import { SidebarFiltroComponent } from './shared/sidebar-filtro/sidebar-filtro.component';
 import { SidebarRelatoriosComponent } from './shared/sidebar-relatorios/sidebar-relatorios.component';
+import { DashboardGraficosComponent } from './screen/dashboard-graficos/dashboard-graficos.component';
+import { DashboardAlertasComponent } from './screen/dashboard-alertas/dashboard-alertas.component';
+import { RelatorioUsuarioComponent } from './screen/relatorio-usuario/relatorio-usuario.component';
+import { RelatorioProjetosComponent } from './screen/relatorio-projetos/relatorio-projetos.component';
+import { RelatorioTiposComponent } from './screen/relatorio-tipos/relatorio-tipos.component';
+import { RelatorioFormasDePagamentosComponent } from './screen/relatorio-formas-de-pagamentos/relatorio-formas-de-pagamentos.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +54,13 @@ import { SidebarRelatoriosComponent } from './shared/sidebar-relatorios/sidebar-
     SidebarAcaoComponent,
     SidebarMenuComponent,
     SidebarFiltroComponent,
-    SidebarRelatoriosComponent
+    SidebarRelatoriosComponent,
+    DashboardGraficosComponent,
+    DashboardAlertasComponent,
+    RelatorioUsuarioComponent,
+    RelatorioProjetosComponent,
+    RelatorioTiposComponent,
+    RelatorioFormasDePagamentosComponent
   ],
   imports: [
     BrowserModule,

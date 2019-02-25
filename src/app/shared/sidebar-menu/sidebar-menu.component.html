@@ -1,40 +1,39 @@
 <div class="col-12">
   <h3 class="card-title">Gestão</h3>
   <div class="s-card">
-    <ul class="list-group">
+    <ul class="list-group" >
       <li class="list-group-item">
-        <a data-toggle="collapse" href="#painelControle" class="active" role="button" aria-expanded="false"
-          aria-controls="painelControle">
+        <a href="#painelControle" data-toggle="collapse" routerLinkActive="active">
           Painel de Controle
         </a>
         <div class="collapse" id="painelControle">
           <ul class="list-group">
             <li class="list-group-item">
-              <a href="#">Gráficos</a>
+              <a routerLink="dashboard-graficos" routerLinkActive="active">Gráficos</a>
             </li>
             <li class="list-group-item">
-              <a href="#">Alertas</a>
+              <a routerLink="dashboard-alertas" routerLinkActive="active">Alertas</a>
             </li>
           </ul>
         </div>
       </li>
       <li class="list-group-item">
-        <a data-toggle="collapse" href="#relatorios" role="button" aria-expanded="false" aria-controls="painelControle">
+        <a href="#relatorios" data-toggle="collapse" routerLinkActive="active">
           Relatórios
         </a>
         <div class="collapse" id="relatorios">
           <ul class="list-group">
             <li class="list-group-item">
-              <a href="#">Despesa por Usuário</a>
+              <a routerLink="relatorio-usuarios" routerLinkActive="active">Despesa por Usuário</a>
             </li>
             <li class="list-group-item">
-              <a href="#">Despesa por Projetos</a>
+              <a routerLink="relatorio-projetos" routerLinkActive="active">Despesa por Projetos</a>
             </li>
             <li class="list-group-item">
-              <a href="#">Despesas por Tipo</a>
+              <a routerLink="relatorio-tipos" routerLinkActive="active">Despesas por Tipo</a>
             </li>
             <li class="list-group-item">
-              <a href="#">Despesas por Forma de Pagamento</a>
+              <a routerLink="relatorio-formas-pagamento" routerLinkActive="active">Despesas por Forma de Pagamento</a>
             </li>
           </ul>
         </div>
