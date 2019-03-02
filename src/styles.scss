@@ -1,3 +1,4 @@
+
 html {
     height: 100%;
   }
@@ -13,6 +14,9 @@ body{
     flex-direction: column;
     justify-content: center;
     min-height: 100%;
+}
+.fa{
+    color: #E25453;
 }
 
 .page-main {
@@ -67,17 +71,16 @@ body{
     border-right: none !important; 
     border-top-left-radius: none !important; 
     border-top-right-radius: none !important;    
-    color: #495057; 
+    color: #fff; 
 }
 
 .nav-tabs, 
     .nav-tabs .nav-link:focus  {
-    border-bottom: 1px solid #DC7D2C !important; 
+    border-bottom: 1px solid #808080 !important; 
 }
 
 .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
-    color: #495057;
-    border-bottom: 2px solid #DC7D2C !important;
+    border-bottom: 2px solid #808080 !important;
     background: #f5f7fb !important; 
 }
 
@@ -93,8 +96,12 @@ body{
 /* ##################################### HEADER ##########################################################*/
 
 .header{
-    border-bottom: 1px solid #f5f5f5;
-    background: #ffff;
+    //border-bottom: 1px solid rgb(192,192,192);
+    background: #99d3df;
+}
+
+.logo{
+    margin-bottom: 5px
 }
 
 .header-brand {
@@ -109,11 +116,11 @@ body{
 }
 
 .text-default {   
-    color: #495057 !important;  
+    color: #fff !important;  
   }
 
 .text-muted {
-    color: #9aa0ac !important;
+    color:#e9e9e9 !important;
   }
 
 .mt-1,
@@ -230,23 +237,53 @@ label{
     border-radius:4px !important;
     -moz-border-radius:4px !important;
     -webkit-border-radius:4px;
-    -webkit-box-shadow: 0px 0px 15px 1px #DC7D2C;
-    -moz-box-shadow: 0px 0px 15px 1px #DC7D2C;
-    box-shadow: 0px 0px 5px 0px #DC7D2C;
-    border:1px solid #DC7D2C;
+    -webkit-box-shadow: 0px 0px 15px 1px #FDE99C;
+    -moz-box-shadow: 0px 0px 15px 1px #FDE99C;
+    box-shadow: 0px 0px 5px 0px #FDE99C;
+    border:1px solid #FDE99C;
     outline:none; 
     border-radius: 0px !important;
 }
 
 .btn-outline-warning{
-    border:1px solid #DC7D2C;
-    color:#DC7D2C;
+    border:1px solid #FDE99C;
+    color:#FDE99C;
 }
 
 .btn-outline-warning:focus :hover {
-    background:  #DC7D2C;
+    background:  #FDE99C;
     color:#fff;
 }
+
+//#5A7097, #BBE07F, #B98DBF, #E25453,
+// #FDE99C, #83D6EB, #004792, #F5C4C6, #A2F6E9, #F09798, 
+//#C34F33, #D7BEFD, #5BC4C6, #AD0157, #ABFDB5, #022BDB, #10C9C9, 
+//#9594DF, #DE3BF9, #DA819D, #3A51D9, #A6F6B1, #FFEDB0, #22BD50
+
+/* ######################################### BUTTON #####################################################*/
+.btn-acao{
+    background: #22BD50!important;
+    color: #fff;
+}
+
+
+.btn-primary{
+    background:  #004792 !important;
+    color: #fff;
+}
+
+
+.btn-danger{
+    background: #E25453!important;
+    color: #fff;
+}
+
+.btn-warning{
+    background: #FDE99C !important;
+    color: #fff;
+}
+
+
 /* ############################## FOOOTER ###############################################################*/
 .footer {
     background: #fff;
