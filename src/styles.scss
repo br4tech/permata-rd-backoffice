@@ -15,8 +15,21 @@ body{
     justify-content: center;
     min-height: 100%;
 }
+
 .fa{
     color: #E25453;
+}
+
+.fa-bell{
+    font-size: 18px !important;
+    color: #ffff !important;
+}
+
+.fa-map-marker{
+    color: #515151;
+}
+.fa-times{
+    font-size: 10px;
 }
 
 .page-main {
@@ -255,12 +268,87 @@ label{
     color:#fff;
 }
 
+/* ######################################## MODAL #####################################################*/
+.modal-content{
+    border-radius: 0px !important;
+    color: #515151 !important;
+}
+
+.modal-header {
+    padding: none !important;
+    border-top-left-radius: 0px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom: none !important;   
+}
+
+.modal-title{
+    color: #515151 !important;
+    font-weight: 300 !important;
+}
+
+.modal-footer {  
+    background: #f5f5f5;  
+    padding: 10px 15px !important;
+    border-top: 1px solid #dee2e6;
+    border-bottom-right-radius: .3rem;
+    border-bottom-left-radius: .3rem;
+}
+
+.arquivo-anexo{
+    width: 100%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    transition: all .3s ease;
+}
+
+.arquivo-texto{
+    background: #99d3df;
+    font-size: 14px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-weight: 500;
+    padding: 5px;
+}
+
+.arquivo-container{
+    width: 100%;
+    height: 120px;
+    overflow: hidden;
+    position: relative;
+    display: block;
+    text-align: center;
+    background-color: #eee;
+    line-height: 200px;
+}
+
+input[type="checkbox"]{
+    border-radius: 0px ; 
+}
+
+.text-chk{
+    color: #515151;
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 1px !important;
+    padding-left: 5px;
+}
+
+
 //#5A7097, #BBE07F, #B98DBF, #E25453,
 // #FDE99C, #83D6EB, #004792, #F5C4C6, #A2F6E9, #F09798, 
 //#C34F33, #D7BEFD, #5BC4C6, #AD0157, #ABFDB5, #022BDB, #10C9C9, 
 //#9594DF, #DE3BF9, #DA819D, #3A51D9, #A6F6B1, #FFEDB0, #22BD50
 
 /* ######################################### BUTTON #####################################################*/
+.btn{
+    border-radius: 0px !important;
+}
+
+
 .btn-acao{
     background: #22BD50!important;
     color: #fff;
