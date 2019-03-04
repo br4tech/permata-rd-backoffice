@@ -3,6 +3,8 @@ import { CommonModule  } from '@angular/common';
 import { Routes } from '@angular/router';
 import { RouterModule } from '@angular/router';
 
+import { ChartsModule } from 'ng2-charts';
+
 import { SidebarMenuComponent } from '../../shared/sidebar-menu/sidebar-menu.component';
 
 import { DashboardGraficosComponent } from './dashboard-graficos/dashboard-graficos.component';
@@ -13,6 +15,7 @@ import { RelatorioUsuarioComponent } from './relatorio-usuario/relatorio-usuario
 import { RelatorioProjetosComponent } from './relatorio-projetos/relatorio-projetos.component';
 import { RelatorioTiposComponent } from './relatorio-tipos/relatorio-tipos.component';
 import { RelatorioFormasDePagamentosComponent } from './relatorio-formas-de-pagamentos/relatorio-formas-de-pagamentos.component';
+import { GraficoDeBarrasComponent } from './componentes/grafico-de-barras/grafico-de-barras.component';
 
 const ROUTES: Routes = [
     {
@@ -37,11 +40,13 @@ const ROUTES: Routes = [
         RelatorioUsuarioComponent,
         RelatorioProjetosComponent,
         RelatorioTiposComponent,
-        RelatorioFormasDePagamentosComponent
+        RelatorioFormasDePagamentosComponent,
+        GraficoDeBarrasComponent
     ],
     imports: [
         CommonModule,
-        RouterModule.forChild(ROUTES)
+        RouterModule.forChild(ROUTES),
+        ChartsModule
     ],
     exports: [
          RouterModule
