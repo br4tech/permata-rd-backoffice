@@ -1,27 +1,39 @@
-# PermataRD
+# Permata  RD
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.1.
+ Permata RD é um sistema de gestão de reembolso, onde os membro de um empresa pode realizar as prestação de contas,
+dos gasto de suas viagens.
 
-## Development server
+ O Sistema é composto por 4 menu principais:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+  
+ ## Despesas:
 
-## Code scaffolding
+   Nesse modulo o usuario consegue lançar suas depesas, que podem ser:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+     Viagem: Usuario declara o valor da viagem
+     Hospedagem: Seguindo a politica de viagem da empresa, o mesmo deve inserir os valores junto com os comprovantes dos gasto gerado no hotel
+     Refeiçaõ: Também seguinde a politica da empresa
 
-## Build
+## Relatórios
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+     Nesse modulo é onde o usuario agrupa os valores gastos, gerando assim um relatorio para ser aprovado/reprovado pelo seu superior. Caso o mesmo tenha algum adiantamento é vinculado o adiantamento no relatórios, e as despesas são abatidas nesse adiantamento. 
+     No relatorios pode conter os mais diversos tipos de despesas.
 
-## Running unit tests
+## Aprovações
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    Através desse modulo o usuario consegue verificar se seu relatório vou aprovado ou não. Caso sim segue o fluxo normal de pagamento. Caso o relatorio for reprovado o superiod deve adicionar ao relatorio o motivo, assim o usuario que abriu vai conseguir altero.
 
-## Running end-to-end tests
+## Gestão
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+    Esse modulo é liberado apenas para usuarios com perfis de gerencia, não podendo ser habilitado para um usuario nivel 1.
+    Através desse modulo, é possivel verificar o gasto da equipe/departamento, aprovar ou reprovar um relatorio. Caso o usuario não seja administrador, não é carregado relatorios e informações de outras equipes.
 
-## Further help
+### Configuração
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+     No menu configuração que existe no dropdown do usuario, é habilitado a opção configuração. Essa opção tem opções reduzidas caso o usuario não for administrador.
+
+      Administrador: Consegue configurar os itens de forma de pagamento e alterar as politicas. Assim como adicionar empresas filiais ou matriz.
+
+      Usuario: Caso o usuario  possui um perfil simples, o mesmo vai apenas poder alterar a sua senha e seus dados como e-mail e conta.
+     
+   
