@@ -15,7 +15,7 @@ export const ROUTES: Routes = [
                         { path: 'relatorios', component: RelatoriosComponent },
                         { path: 'aprovacoes', component: AprovacaoesComponent },
                         { path: 'admin', loadChildren: './gestao/gestao.module#GestaoModule' },
-                        { path: 'configuracao', component: ConfiguracaoComponent }
+                        { path: 'configuracao', loadChildren: './configuracao/configuracao.module#ConfiguracaoModule' }
                 ]
         }
  ]

@@ -15,7 +15,7 @@ import { ModalRelatorioComponent } from '../shared/modal-relatorio/modal-relator
 import { DespesasComponent } from './despesas/despesas.component'
 import { RelatoriosComponent } from './relatorios/relatorios.component';
 import { AprovacaoesComponent } from './aprovacaoes/aprovacaoes.component';
-import { ConfiguracaoComponent } from './configuracao/configuracao.component';
+
 
 @NgModule({
     declarations: [ 
@@ -24,8 +24,7 @@ import { ConfiguracaoComponent } from './configuracao/configuracao.component';
         RelatoriosComponent,
         SidebarFiltroComponent,
         AprovacaoesComponent,
-        SidebarRelatoriosComponent,  
-        ConfiguracaoComponent ,   
+        SidebarRelatoriosComponent, 
         ModalDespesaComponent,  
         ModalPercursoComponent,
         ModalPercursoMapaComponent,
