@@ -17,6 +17,7 @@ import { RelatorioTiposComponent } from './relatorio-tipos/relatorio-tipos.compo
 import { RelatorioFormasDePagamentosComponent } from './relatorio-formas-de-pagamentos/relatorio-formas-de-pagamentos.component';
 import { GraficoDeBarrasComponent } from './componentes/grafico-de-barras/grafico-de-barras.component';
 
+
 const ROUTES: Routes = [
     {
         path: '', component: GestaoComponent, children: [
