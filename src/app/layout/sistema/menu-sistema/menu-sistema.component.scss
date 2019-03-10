@@ -2,3 +2,38 @@
     background: #88bbd6;
     color: #fff !important;
 }
+
+/*#################################### NAV TABS #######################################################*/
+.nav-tabs {
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+    color: #9aa0ac !important;
+    margin: 0 -.75rem !important;
+    font-size: 18px;
+    padding-top: 12px
+}
+
+.nav-tabs .nav-item {
+    margin-bottom: -1px;   
+}
+
+.nav-tabs .nav-link {
+    border-top: none !important; 
+    border-left: none !important; 
+    border-right: none !important; 
+    border-top-left-radius: none !important; 
+    border-top-right-radius: none !important;    
+    color: #fff; 
+}
+
+.nav-tabs, 
+    .nav-tabs .nav-link:focus  {
+    border-bottom: 1px solid #808080 !important; 
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    border-bottom: 2px solid #808080 !important;
+    background: #f5f7fb !important; 
+}
