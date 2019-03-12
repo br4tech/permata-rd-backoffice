@@ -7,18 +7,19 @@
       <div class="card-body">
         <ul class="nav nav-tabs">
           <li class="nav-item">
-            <a class="nav-link active" href="#">Dados Gerais</a>
+            <a class="nav-link" routerLink="empresa-dados-gerais" routerLinkActive="active">Dados Gerais</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Moedas</a>
+            <a class="nav-link" routerLink="empresa-moeda" routerLinkActive="active">Moedas</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Preferência</a>
+            <a class="nav-link" routerLink="empresa-preferencia" routerLinkActive="active">Preferência</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link disabled" href="#">Política de Despesas</a>
+            <a class="nav-link" routerLink="empresa-polita-despesa" routerLinkActive="active">Política de Despesas</a>
           </li>
         </ul>
+        <router-outlet></router-outlet>
       </div>
     </div>
   </div>

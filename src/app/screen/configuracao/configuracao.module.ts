@@ -10,7 +10,6 @@ import { VisaoGeralConfiguracaoComponent }  from './visao-geral-configuracao/vis
 import { CadastroPoliticaEmpresaComponent } from './cadastro-politica-empresa/cadastro-politica-empresa.component';
 import { MeusDadosComponent } from './meus-dados/meus-dados.component';
 import { MudarSenhaComponent } from './mudar-senha/mudar-senha.component';
-import { CadastroEmpresaComponent } from './cadastro-empresa/cadastro-empresa.component';
 import { CadastroFormaPagamentoComponent } from './cadastro-forma-pagamento/cadastro-forma-pagamento.component';
 import { CadastroPoliticaKilometragemComponent } from './cadastro-politica-kilometragem/cadastro-politica-kilometragem.component';
 import { CadastroCentroDeCustoComponent } from './cadastro-centro-de-custo/cadastro-centro-de-custo.component';
@@ -29,8 +28,8 @@ const ROUTES: Routes = [
             { path: 'visao-geral-configuracao', component: VisaoGeralConfiguracaoComponent },
             { path: 'cadastro-polita-empresa', component: CadastroPoliticaEmpresaComponent },
             { path: 'meus-dados', component: MeusDadosComponent },
-            { path: 'mudar-senha', component: MudarSenhaComponent },      
-            { path: 'cadastro-empresa', component: CadastroEmpresaComponent },
+            { path: 'mudar-senha', component: MudarSenhaComponent },  
+            { path: 'cadastro-empresa', loadChildren: './cadastro-empresa/componentes/empresa.module#EmpresaModule' },  
             { path: 'cadastro-departamento-cargos', component: CadastroDepartamentoCargosComponent },
             { path: 'cadastro-membros', component: CadastroMembrosEquipeComponent },
             { path: 'cadastro-centro-custo', component: CadastroCentroDeCustoComponent },
@@ -52,8 +51,7 @@ const ROUTES: Routes = [
         VisaoGeralConfiguracaoComponent,
         CadastroPoliticaEmpresaComponent, 
         MeusDadosComponent,
-        MudarSenhaComponent,
-        CadastroEmpresaComponent,
+        MudarSenhaComponent,      
         CadastroFormaPagamentoComponent,
         CadastroPoliticaKilometragemComponent,    
         CadastroCentroDeCustoComponent,
@@ -63,7 +61,7 @@ const ROUTES: Routes = [
         CadastroTipoDespesaComponent,
         CadastroPoliticaDespesaComponent,
         CadastroFluxoAprovacaoComponent,
-        FinanceiroComponent,       
+        FinanceiroComponent,      
     ],
     imports: [ 
         CommonModule,

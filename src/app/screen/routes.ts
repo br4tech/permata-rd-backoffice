@@ -5,7 +5,6 @@ import { SistemaComponent } from '../layout/sistema/sistema.component';
 import { DespesasComponent } from './despesas/despesas.component';
 import { RelatoriosComponent } from './relatorios/relatorios.component';
 import { AprovacaoesComponent } from './aprovacaoes/aprovacaoes.component';
-import { ConfiguracaoComponent } from './configuracao/configuracao.component';
 
 export const ROUTES: Routes = [
         {
