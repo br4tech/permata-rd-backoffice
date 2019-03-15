@@ -1,26 +1,25 @@
 <div class="col-12">
-  <h3 class="card-title text-left card-t">Cadastro de Empresa</h3>
+  <h3 class="v-title text-center">Cadastro Empresa</h3>
 </div>
+<hr />
 <div class="row">
   <div class="col-sm-12 col-md-12 col-lg-12">
-    <div class="card">
-      <div class="card-body">
-        <ul class="nav nav-tabs">
-          <li class="nav-item">
-            <a class="nav-link" routerLink="empresa-dados-gerais" routerLinkActive="active">Dados Gerais</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="empresa-moeda" routerLinkActive="active">Moedas</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="empresa-preferencia" routerLinkActive="active">Preferência</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="empresa-polita-despesa" routerLinkActive="active">Política de Despesas</a>
-          </li>
-        </ul>
-        <router-outlet></router-outlet>
-      </div>
+    <div class="card-body">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="empresa-dados-gerais" routerLinkActive="active">Dados Gerais</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="empresa-moeda" routerLinkActive="active">Moedas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="empresa-preferencia" routerLinkActive="active">Preferência</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="empresa-polita-despesa" routerLinkActive="active">Política de Despesas</a>
+        </li>
+      </ul>
+      <router-outlet></router-outlet>
     </div>
   </div>
 </div>

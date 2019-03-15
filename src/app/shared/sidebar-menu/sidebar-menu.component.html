@@ -1,96 +1,94 @@
-<div class="col-12">
-  <h3 class="card-title">Gestão</h3>
-  <div class="s-card">
-    <ul class="list-group" >
-      <li class="list-group-item">
-        <a href="#painelControle" data-toggle="collapse" routerLinkActive="active">
-          Painel de Controle
-        </a>
-        <div class="collapse" id="painelControle">
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a routerLink="dashboard-graficos" routerLinkActive="active">Gráficos</a>
-            </li>
-            <li class="list-group-item">
-              <a routerLink="dashboard-alertas" routerLinkActive="active">Alertas</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="list-group-item">
-        <a href="#relatorios" data-toggle="collapse" routerLinkActive="active">
-          Relatórios
-        </a>
-        <div class="collapse" id="relatorios">
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a routerLink="relatorio-usuarios" routerLinkActive="active">Despesa por Usuário</a>
-            </li>
-            <li class="list-group-item">
-              <a routerLink="relatorio-projetos" routerLinkActive="active">Despesa por Projetos</a>
-            </li>
-            <li class="list-group-item">
-              <a routerLink="relatorio-tipos" routerLinkActive="active">Despesas por Tipo</a>
-            </li>
-            <li class="list-group-item">
-              <a routerLink="relatorio-formas-pagamento" routerLinkActive="active">Despesas por Forma de Pagamento</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="list-group-item">
-        <a data-toggle="collapse" href="#pagamentos" role="button" aria-expanded="false" aria-controls="painelControle">
-          Pagamentos
-        </a>
-        <div class="collapse" id="pagamentos">
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a routerLink="confirmar-pagamento-reembolso" routerLinkActive="active">Confirmar pagamento dos reembolso</a>
-            </li>
-            <li class="list-group-item">
-              <a routerLink="extrato-pagamentos" routerLinkActive="active">Extrato de Pagamentos</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="list-group-item">
-        <a data-toggle="collapse" href="#conciliacao" role="button" aria-expanded="false"
-          aria-controls="painelControle">
-          Conciliação
-        </a>
-        <div class="collapse" id="conciliacao">
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a routerLink="conciliar-depesas-nao-reembolsaveis" routerLinkActive="active">Conciliação despesas não reembolsáveis</a>
-            </li>
-            <li class="list-group-item">
-              <a routerLink="extrato-conciliacao" routerLinkActive="active">Extrato de Conciliação</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="list-group-item">
-        <a data-toggle="collapse" href="#moeda" role="button" aria-expanded="false" aria-controls="painelControle">
-          Moeda
-        </a>
-        <div class="collapse" id="moeda">
-          <ul class="list-group">
-            <li class="list-group-item">
-              <a routerLink="conversao-moeda" routerLinkActive="active">Conversão de Moedas </a>
-            </li>
-            <li class="list-group-item">
-              <a routerLink="extrato-conversao" routerLinkActive="active">Extrato de Conversões</a>
-            </li>
-          </ul>
-        </div>
-      </li>
-      <li class="list-group-item">
-        <a routerLink="adiantamentos" routerLinkActive="active"> Adiantamento</a>
-      </li>
-      <li class="list-group-item">
-        <a routerLink="reprovar-relatorios" routerLinkActive="active"> Reprovar Relatórios</a>
-      </li>
-    </ul>
-
-  </div>
+<h3 class="card-title">Gestão</h3>
+<div class="panel-gray">
+  <ul class="list-group">
+    <li class="list-group-item">
+      <a href="#painelControle" data-toggle="collapse" routerLinkActive="active">
+        <i class="fa"></i> Painel de Controle
+      </a>
+      <div class="collapse show" id="painelControle">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a routerLink="dashboard-graficos" routerLinkActive="active">Gráficos</a>
+          </li>
+          <li class="list-group-item">
+            <a routerLink="dashboard-alertas" routerLinkActive="active">Alertas</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <a href="#relatorios" data-toggle="collapse" routerLinkActive="active">
+        <i class="fa"></i> Relatórios
+      </a>
+      <div class="collapse show" id="relatorios">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a routerLink="relatorio-usuarios" routerLinkActive="active">Despesa por Usuário</a>
+          </li>
+          <li class="list-group-item">
+            <a routerLink="relatorio-projetos" routerLinkActive="active">Despesa por Projetos</a>
+          </li>
+          <li class="list-group-item">
+            <a routerLink="relatorio-tipos" routerLinkActive="active">Despesas por Tipo</a>
+          </li>
+          <li class="list-group-item">
+            <a routerLink="relatorio-formas-pagamento" routerLinkActive="active">Despesas por Forma de Pagamento</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <a data-toggle="collapse" href="#pagamentos" role="button" aria-expanded="false" aria-controls="painelControle">
+        <i class="fa"></i> Pagamentos
+      </a>
+      <div class="collapse show" id="pagamentos">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a routerLink="confirmar-pagamento-reembolso" routerLinkActive="active">Confirmar pagamento dos
+              reembolso</a>
+          </li>
+          <li class="list-group-item">
+            <a routerLink="extrato-pagamentos" routerLinkActive="active">Extrato de Pagamentos</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <a data-toggle="collapse" href="#conciliacao" role="button" aria-expanded="false" aria-controls="painelControle">
+        <i class="fa"></i> Conciliação
+      </a>
+      <div class="collapse show" id="conciliacao">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a routerLink="conciliar-depesas-nao-reembolsaveis" routerLinkActive="active">Conciliação despesas não
+              reembolsáveis</a>
+          </li>
+          <li class="list-group-item">
+            <a routerLink="extrato-conciliacao" routerLinkActive="active">Extrato de Conciliação</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <a data-toggle="collapse" href="#moeda" role="button" aria-expanded="false" aria-controls="painelControle">
+        <i class="fa"></i> Moeda
+      </a>
+      <div class="collapse show" id="moeda">
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a routerLink="conversao-moeda" routerLinkActive="active">Conversão de Moedas </a>
+          </li>
+          <li class="list-group-item">
+            <a routerLink="extrato-conversao" routerLinkActive="active">Extrato de Conversões</a>
+          </li>
+        </ul>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <a routerLink="adiantamentos" routerLinkActive="active"> Adiantamento</a>
+    </li>
+    <li class="list-group-item">
+      <a routerLink="reprovar-relatorios" routerLinkActive="active"> Reprovar Relatórios</a>
+    </li>
+  </ul>
 </div>

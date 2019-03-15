@@ -2,26 +2,20 @@
     margin-bottom: 40px;
 }
 
-.v-title{
-    font-weight: 300 !important;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    font-size: 1.416em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: #000;
-}
 h3{
     font-weight: 300 !important;
     color: #000;
 }
 
-h4{
+h4 > span{
+    font-weight: 300;
     font-size: 1.216em;
-    margin-top: 20px;
-    font-weight: 300 !important;
+    margin-top: 20px;  
     color: #000;
+}
+
+strong{
+    font-weight: 500;
 }
 
 .card-header{
@@ -30,6 +24,7 @@ h4{
     padding: 0;
     background: transparent;
     font-weight: bold;
+    background-color: #394263;
 }
 
 .card-title{
@@ -40,5 +35,5 @@ h4{
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #515151;
+    color: #fff;
 }

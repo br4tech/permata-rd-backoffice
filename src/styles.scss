@@ -4,21 +4,27 @@ html {
   }
 
 body{
-    background: #f5f7fb; 
+    background: #f8f8f8; 
     min-height: 100%;
     display: grid;
     grid-template-rows: 1fr auto;
 }
-.page {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    min-height: 100%;
-}
 
-.fa{
-    color: #E25453;
-}
+.grid-container {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-areas:
+      "sidenav header"
+      "sidenav main"
+      "sidenav footer";
+    height: 100vh;
+  }
+
+  .main {
+    grid-area: main;    
+  }
+
 
 .fa-bell{
     font-size: 18px !important;
@@ -32,9 +38,6 @@ body{
     font-size: 10px;
 }
 
-.page-main {
-    flex: 1 1 auto;
-}
 
 .p-flex {
     display: flex!important;
@@ -44,41 +47,15 @@ body{
     margin-left: auto!important;
 }
 
-.page-content {
-    margin: .75rem 0;
-}
-
-@media (min-width: 992px){
-.flex-lg-row {
-    flex-direction: row!important;
-  }
-.d-lg-block {
-    display: block !important;
-  }
-}
-@media (max-width: 992px){
-.flex-column {
-    flex-direction: column!important;
-}
-}
-
 .form-group ,label{
     text-align: left !important;
 }
 
 /* ##################################### HEADER ##########################################################*/
-.border-0 {
-    border: 0!important;
-}
-
-.wraper{
-    background: #f5f7fb !important;
-    min-height: 600px;
-}
 
 .header{
     //border-bottom: 1px solid rgb(192,192,192);
-    background: #99d3df;
+     background-color: #648ca6;
 }
 
 .logo{
@@ -142,22 +119,32 @@ body{
 
 /* ####################################### SIDEBAR ######################################################*/
 
-.s-card{
-   border-top: 1px solid rgba(79,79,60,.2);
-   padding: 30px; 
-   width: 100% !important;
-   background: #ffff;
+.sidenav {
+    grid-area: sidenav;  
+    border-right: 1px solid rgba(0,0,0,.1); 
+    background: #f8f8f8;
+  }
+  
+
+.panel-gray{
+    background-color: #f8f8f8;
+    border-top: 1px solid rgba(0,0,0,.1); 
 }
 
-.card-title {
-    font-weight: 300;
-    padding: 0 10px;
-    font-size: 16px;
-    line-height: 30px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
+[data-toggle="collapse"] .fa:before {   
+    content: "\f107";
+    color: #333;
+  }
+  
+  [data-toggle="collapse"].collapsed .fa:before {
+    content: "\f105";
+    color: #333;
+  }
+
+  .list-group-item {
+      background: transparent;
+  }
+
 
 /* ######################################## CONTENT #####################################################*/
 .conteudo-centro{
@@ -182,6 +169,16 @@ body{
     line-height: 24px;
     max-width: 70%;
     margin: 0 auto;
+}
+
+.v-title{
+    font-weight: 300 !important;
+    font-size: 1.416em;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #000;
+    margin-top: -30px;
 }
 
 /* ######################################## ROW #########################################################*/
@@ -328,12 +325,6 @@ input[type="checkbox"]{
     text-overflow: ellipsis;
 }
 
-
-//#5A7097, #BBE07F, #B98DBF, #E25453,
-// #FDE99C, #83D6EB, #004792, #F5C4C6, #A2F6E9, #F09798, 
-//#C34F33, #D7BEFD, #5BC4C6, #AD0157, #ABFDB5, #022BDB, #10C9C9, 
-//#9594DF, #DE3BF9, #DA819D, #3A51D9, #A6F6B1, #FFEDB0, #22BD50
-
 /* ######################################### BUTTON #####################################################*/
 .btn{
     border-radius: 0px !important;
@@ -361,7 +352,11 @@ input[type="checkbox"]{
     background: #FDE99C !important;
     color: #fff;
 }
+/* ############################## TABELAS ###############################################################*/
 
+thead{
+   background-color: rgba(0,0,0,.03);
+}
 
 /* ############################## FOOOTER ###############################################################*/
 .footer {
