@@ -1,3 +1,22 @@
 textarea{
     min-height: 170px;
 }
+
+.list-group, .list-group-item{
+    border: none !important;
+    padding: 5px !important;
+}
+
+.list-group-item , a{
+    font-size: 14px !important;
+    font-weight: 300 !important; 
+    color: #212529 !important;  
+}
+
+.list-group-item , a:hover, a:focus{
+    text-decoration: none !important;    
+}
+
+.list-group-item , .active{
+ font-weight: 600 !important;
+}
