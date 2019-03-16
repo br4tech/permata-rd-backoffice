@@ -325,6 +325,15 @@ input[type="checkbox"]{
     text-overflow: ellipsis;
 }
 
+.card-subtitle{
+    padding: 0 20px;
+    font-weight: 200;
+    font-size: 17px;
+    color: #898989;
+    display: inline-block;
+    margin: 0;
+}
+
 /* ######################################### BUTTON #####################################################*/
 .btn{
     border-radius: 0px !important;
