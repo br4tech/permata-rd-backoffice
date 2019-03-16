@@ -10,6 +10,10 @@ body{
     grid-template-rows: 1fr auto;
 }
 
+a{
+    color: #cdcdcd;
+}
+
 .grid-container {
     display: grid;
     grid-template-columns: 240px 1fr;
@@ -364,8 +368,47 @@ input[type="checkbox"]{
 /* ############################## TABELAS ###############################################################*/
 
 thead{
-   background-color: rgba(0,0,0,.03);
+    background: #fff; 
 }
+
+.data-tables{
+    border: 1px solid rgba(0,0,0,.05);
+    font-weight: 300;    
+}
+
+.data-tables > thead{
+    border: 1px solid rgba(0,0,0,.05);
+    font-weight: 300;
+}
+
+.data-tables > thead > tr > th {
+    font-weight: 300 !important;  
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom:1px solid rgba(0,0,0,.05);
+}
+
+.data-tables-clear{
+    border: 1px solid rgba(0,0,0,.05);
+    font-weight: 300;
+    background: #fff;
+}
+
+.data-tables-clear > thead{
+    background: #fff;    
+}
+
+.data-tables-clear > thead > tr > th {
+    font-weight: 300 !important;  
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border-bottom:1px solid rgba(0,0,0,.05);
+}
+
 
 /* ############################## FOOOTER ###############################################################*/
 .footer {

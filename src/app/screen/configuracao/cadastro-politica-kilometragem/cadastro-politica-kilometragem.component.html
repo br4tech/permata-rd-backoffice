@@ -1,3 +1,19 @@
-<p>
-  cadastro-politica-kilometragem works!
-</p>
+<div class="col-12">
+    <h3 class="v-title text-center">Cadastro Politica de Quilometragem</h3>
+  </div>
+  <hr />
+  <div class="row">
+    <div class="col-sm-12 col-md-12 col-lg-12">
+      <div class="card-body">
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="valores-quilometragem" routerLinkActive="active">Valores de Quilometragem</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="trechos-pre-cadastrados" routerLinkActive="active">Trechos Pré-cadastrados</a>
+          </li>        
+        </ul>
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
