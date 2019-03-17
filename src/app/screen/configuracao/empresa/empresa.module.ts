@@ -3,17 +3,18 @@ import { CommonModule } from '@angular/common';
 import { Routes } from '@angular/router';
 import { RouterModule } from '@angular/router';
 
-import { CadastroEmpresaComponent } from '../cadastro-empresa.component';
-
+import { ListaEmpresaComponent } from './lista-empresa/lista-empresa.component';
+import { CadastroEmpresaComponent } from './cadastro-empresa/cadastro-empresa.component';
 import { DadosGeraisEmpresaComponent } from './dados-gerais-empresa/dados-gerais-empresa.component';
 import { EmpresaMoedasComponent } from './empresa-moedas/empresa-moedas.component';
 import { EmpresaPreferenciaComponent } from './empresa-preferencia/empresa-preferencia.component';
 import { EmpresaPolitaDespesaComponent } from './empresa-polita-despesa/empresa-polita-despesa.component';
 
-
 const ROUTES: Routes = [
+  { path: '', component: ListaEmpresaComponent },
+  { path: 'listar-empresas', component: ListaEmpresaComponent },
   {
-    path: '', component: CadastroEmpresaComponent, children: [
+    path: 'cadastro-empresa', component: CadastroEmpresaComponent, children: [
       { path: '', component: DadosGeraisEmpresaComponent },
       { path: 'empresa-dados-gerais', component: DadosGeraisEmpresaComponent },
       { path: 'empresa-moeda', component: EmpresaMoedasComponent },
@@ -30,6 +31,7 @@ const ROUTES: Routes = [
     EmpresaMoedasComponent,
     EmpresaPreferenciaComponent,
     EmpresaPolitaDespesaComponent,
+    ListaEmpresaComponent,
   ],
   imports: [
     CommonModule,
