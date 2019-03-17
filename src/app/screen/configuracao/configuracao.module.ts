@@ -14,7 +14,6 @@ import { CadastroFormaPagamentoComponent } from './cadastro-forma-pagamento/cada
 import { CadastroCentroDeCustoComponent } from './cadastro-centro-de-custo/cadastro-centro-de-custo.component';
 import { CadastroMembrosEquipeComponent } from './cadastro-membros-equipe/cadastro-membros-equipe.component';
 import { CadastroDepartamentoCargosComponent } from './cadastro-departamento-cargos/cadastro-departamento-cargos.component';
-import { CadastroTipoDespesaComponent } from './cadastro-tipo-despesa/cadastro-tipo-despesa.component';
 import { CadastroPoliticaDespesaComponent } from './cadastro-politica-despesa/cadastro-politica-despesa.component';
 import { CadastroFluxoAprovacaoComponent } from './cadastro-fluxo-aprovacao/cadastro-fluxo-aprovacao.component';
 import { FinanceiroComponent } from './financeiro/financeiro.component';
@@ -33,7 +32,7 @@ const ROUTES: Routes = [
             { path: 'cadastro-centro-custo', component: CadastroCentroDeCustoComponent },
             { path: 'projeto', loadChildren: './projeto/projeto.module#ProjetoModule'},
             { path: 'cadastro-politica-km', loadChildren: './cadastro-politica-kilometragem/kilometragem.module#KilometragemModule' },
-            { path: 'cadastro-tipo-despesa', component: CadastroTipoDespesaComponent },
+            { path: 'tipo-despesa', loadChildren: './tipo-despesa/tipodespesa.module#TipoDespesaModule' },
             { path: 'cadastro-politica-despesa', component: CadastroPoliticaDespesaComponent },
             { path: 'cadastro-forma-pagamento', component: CadastroFormaPagamentoComponent },
             { path: 'cadastro-fluxo-aprovacao', component: CadastroFluxoAprovacaoComponent },
@@ -53,8 +52,7 @@ const ROUTES: Routes = [
         CadastroFormaPagamentoComponent,
         CadastroCentroDeCustoComponent,
         CadastroMembrosEquipeComponent,
-        CadastroDepartamentoCargosComponent,
-        CadastroTipoDespesaComponent,
+        CadastroDepartamentoCargosComponent,  
         CadastroPoliticaDespesaComponent,
         CadastroFluxoAprovacaoComponent,
         FinanceiroComponent,
