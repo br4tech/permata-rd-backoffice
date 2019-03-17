@@ -1,54 +1,102 @@
-<div class="card">
-  <div class="card-body">
-    <div class="col-sm-3 col-md-3 col-lg-3">
-      <div class="form-group">
-        <label>Valor pago por KM</label>
-        <input type="text" class="form-control">
+<div class="card-body">
+  <div class="card-border">
+    <div class="row">
+      <div class="col-sm-12 col-md-12 col-lg-12">
+        <h6 class="card-subtitle">
+          Definições padrão de quilometragem
+          (Estas definições se aplicam quando não há política de quilometragem criada ou vinculada ao usuário)
+        </h6>
       </div>
     </div>
-    <div class="col-sm-3 col-md-3 col-lg-3">
-      <label>PERMITE ALTERAR O VALOR DO KM MANUALMENTE</label>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-        <label class="form-check-label" for="inlineRadio1">Sim</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-        <label class="form-check-label" for="inlineRadio2">Não</label>
-      </div>
-    </div>
-    <div class="col-sm-3 col-md-3 col-lg-3">
-      <label>PERMITE ALTERAR O VALOR DO KM MANUALMENTE</label>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-        <label class="form-check-label" for="inlineRadio1">Sim</label>
-      </div>
-      <div class="form-check form-check-inline">
-        <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-        <label class="form-check-label" for="inlineRadio2">Não</label>
-      </div>
-    </div>
-  </div>
-
-  <div class="card-body">
-    <table class="table data-tables-clear">
-      <thead>
-        <tr>
-          <th scope="col">Descrição</th>
-          <th scope="col">
-            <div class="pull-right">
-              <button class="btn btn-sm btn-acao">
-                <i class="fa fa-pencil"></i> Criar Política
-              </button>
+    <div class="card-body">
+      <div class="col-sm-12 col-md-12 col-xs-12">
+        <div class="row">
+          <div class="col-sm-2 col-md-2 col-lg-2">
+            <div class="form-group">
+              <label>Valor pago por KM</label>
+              <input type="text" class="form-control">
             </div>
-          </th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td colspan="2">Nenhum registro encontrado</td>
-        </tr>
-      </tbody>
-    </table>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <label>PERMITE ALTERAR O VALOR DO KM MANUALMENTE</label>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <div class="col-md-4 offset-md-2">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Sim</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                  <label class="form-check-label" for="inlineRadio2">Não</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <label>PERMITE ALTERAR O VALOR DO KM MANUALMENTE</label>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <div class="col-md-4 offset-md-2">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Sim</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                  <label class="form-check-label" for="inlineRadio2">Não</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-md-3 col-lg-3">
+            <label>EXIGIR RECIBO EM PERCURSOS MANUAIS</label>
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <div class="col-md-4 offset-md-2">
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                    value="option1">
+                  <label class="form-check-label" for="inlineRadio1">Sim</label>
+                </div>
+                <div class="form-check form-check-inline">
+                  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                    value="option2">
+                  <label class="form-check-label" for="inlineRadio2">Não</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-1 col-md-1 col-lg-1">
+            <div class="pull-right">
+              <button class="btn btn-sm btn-acao">Salvar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
+</div>
+
+<div class="card-body">
+  <table class="table data-tables-clear">
+    <thead>
+      <tr>
+        <th scope="col">Descrição</th>
+        <th scope="col">
+          <div class="pull-right">
+            <button class="btn btn-sm btn-acao">
+              <i class="fa fa-pencil"></i> Criar Política
+            </button>
+          </div>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2">Nenhum registro encontrado</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
