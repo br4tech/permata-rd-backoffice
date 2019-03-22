@@ -323,20 +323,47 @@ input[type="checkbox"]{
     border-radius: 0px !important;
 }
 
+
+.p-bar{
+    margin-bottom: 40px;
+}
+
+h3{
+    font-weight: 300 !important;
+    color: #000;
+}
+
+h4 > span{
+    font-weight: 300;
+    font-size: 1.216em;
+    margin-top: 20px;  
+    color: #000;
+}
+
+strong{
+    font-weight: 500;
+}
+
 .card-header{
-    padding: 0px !important;
-    text-align: left !important;
+    position: relative;
+    height: 50px;
+    padding: 0;
+    background: transparent;
+    font-weight: bold;
+    background-color: #394263;
 }
 
 .card-title{
-    font-weight: 300 !important;
-    padding: 0 20px;
-    font-size: 1.416em;
+    font-weight: 300;
+    padding: 0 10px;
+    font-size: 14px;
     line-height: 50px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
+    color: #fff;
 }
+
 
 .card-subtitle{
     padding: 0 20px;

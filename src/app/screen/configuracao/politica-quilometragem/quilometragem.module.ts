@@ -3,17 +3,16 @@ import { CommonModule } from '@angular/common';
 import { Routes } from '@angular/router';
 import { RouterModule } from '@angular/router';
 
-import { CadastroPoliticaKilometragemComponent } from './cadastro-politica-kilometragem.component';
-
+import { CadastroPoliticaKilometragemComponent } from './cadastro-politica-kilometragem/cadastro-politica-kilometragem.component';
 import { TrechoPreCadastradoComponent } from './trecho-pre-cadastrado/trecho-pre-cadastrado.component';
 import { ValorPorQuilometragemComponent } from './valor-por-quilometragem/valor-por-quilometragem.component';
 
 const ROUTES: Routes = [
   {
     path: '', component: CadastroPoliticaKilometragemComponent, children: [
-      { path: '', component: TrechoPreCadastradoComponent },
-      { path: 'trechos-pre-cadastrados', component: TrechoPreCadastradoComponent },
+      { path: '', redirectTo:'valores-quilometragem', component: ValorPorQuilometragemComponent },
       { path: 'valores-quilometragem', component: ValorPorQuilometragemComponent },
+      { path: 'trechos-pre-cadastrados', component: TrechoPreCadastradoComponent }      
     ]    
   }
 ]
@@ -37,4 +36,4 @@ const ROUTES: Routes = [
 
 })
 
-export class KilometragemModule { }
+export class QuilometragemModule { }

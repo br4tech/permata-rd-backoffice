@@ -1,0 +1,26 @@
+<div class="col-12">
+  <h3 class="v-title text-center">Cadastro Centro de Custos</h3>
+</div>
+<hr />
+<div class="row">
+  <div class="col-sm-12 col-md-12 col-lg-12">
+    <div class="card-body">
+      <a routerLink="../listar-centro-custos" class="btn btn-sm btn-default">
+        <i class="fa fa-angle-double-left"></i> Voltar para Centro de Custos
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-12 col-lg-12">
+    <div class="card-body">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="centro-dados-gerais" routerLinkActive="active">Dados Gerais</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="centro-membro" routerLinkActive="active">Centro x Membro</a>
+        </li>   
+      </ul>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

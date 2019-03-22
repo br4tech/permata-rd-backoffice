@@ -1,0 +1,29 @@
+<div class="col-12">
+  <h3 class="v-title text-center">Editar Membro da Equipe</h3>
+</div>
+<hr />
+<div class="row">
+  <div class="col-sm-12 col-md-12 col-lg-12">
+    <div class="card-body">
+      <a routerLink="../listar-membro" class="btn btn-sm btn-default">
+        <i class="fa fa-angle-double-left"></i> Voltar para Membro de Equipe
+      </a>
+    </div>
+  </div>
+  <div class="col-sm-12 col-md-12 col-lg-12">
+    <div class="card-body">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="editar-membro-equipe" routerLinkActive="active">Editar</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="configuracao-membro" routerLinkActive="active">Configuração Membro</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="lista-membro-projetos" routerLinkActive="active">Membro X Projetos</a>
+        </li>
+      </ul>
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+</div>

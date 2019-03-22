@@ -14,7 +14,7 @@ const ROUTES: Routes = [
     {path: 'listar-projetos', component: ListaProjetoComponent },
     {      
         path: 'cadastro-projeto', component: CadastroProjetoComponent, children: [
-            { path: '', component: EditarProjetoComponent },
+            { path: '', redirectTo:'editar-projeto', component: EditarProjetoComponent },
             { path: 'editar-projeto', component: EditarProjetoComponent },
             { path: 'membros-projeto', component: MembroProjetoComponent },
         ]

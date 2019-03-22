@@ -15,7 +15,7 @@ const ROUTES: Routes = [
     {path: 'listar-tipo-despesa', component: ListaTipoDespesaComponent },
     {      
         path: 'cadastro-tipo-despesa', component: CadastroTipoDespesaComponent, children: [
-            { path: '', component: EditarTipoDespesaComponent},
+            { path: '', redirectTo:'editar-tipo-despesa', component: EditarTipoDespesaComponent},
             { path: 'editar-tipo-despesa', component: EditarTipoDespesaComponent },
             { path: 'limites-despesas', component: LimiteDespesaComponent },
         ]

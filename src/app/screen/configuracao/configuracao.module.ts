@@ -11,9 +11,6 @@ import { CadastroPoliticaEmpresaComponent } from './cadastro-politica-empresa/ca
 import { MeusDadosComponent } from './meus-dados/meus-dados.component';
 import { MudarSenhaComponent } from './mudar-senha/mudar-senha.component';
 import { CadastroFormaPagamentoComponent } from './cadastro-forma-pagamento/cadastro-forma-pagamento.component';
-import { CadastroCentroDeCustoComponent } from './cadastro-centro-de-custo/cadastro-centro-de-custo.component';
-import { CadastroMembrosEquipeComponent } from './cadastro-membros-equipe/cadastro-membros-equipe.component';
-import { CadastroDepartamentoCargosComponent } from './cadastro-departamento-cargos/cadastro-departamento-cargos.component';
 import { CadastroPoliticaDespesaComponent } from './cadastro-politica-despesa/cadastro-politica-despesa.component';
 import { CadastroFluxoAprovacaoComponent } from './cadastro-fluxo-aprovacao/cadastro-fluxo-aprovacao.component';
 import { FinanceiroComponent } from './financeiro/financeiro.component';
@@ -27,11 +24,11 @@ const ROUTES: Routes = [
             { path: 'meus-dados', component: MeusDadosComponent },
             { path: 'mudar-senha', component: MudarSenhaComponent },
             { path: 'empresa', loadChildren: './empresa/empresa.module#EmpresaModule' },
-            { path: 'cadastro-departamento-cargos', component: CadastroDepartamentoCargosComponent },
-            { path: 'cadastro-membros', component: CadastroMembrosEquipeComponent },
-            { path: 'cadastro-centro-custo', component: CadastroCentroDeCustoComponent },
+            { path: 'departamento-cargos', loadChildren: './departamento/departamento.module#DepartamentoModule' },
+            { path: 'membros-equipe', loadChildren: './membro/membro.module#MembroModule' },
+            { path: 'centro-custos', loadChildren: './centro-de-custo/centrodecusto.module#CentroDeCustoModule' },
             { path: 'projeto', loadChildren: './projeto/projeto.module#ProjetoModule'},
-            { path: 'cadastro-politica-km', loadChildren: './cadastro-politica-kilometragem/kilometragem.module#KilometragemModule' },
+            { path: 'politica-quilometragem', loadChildren: './politica-quilometragem/quilometragem.module#QuilometragemModule' },
             { path: 'tipo-despesa', loadChildren: './tipo-despesa/tipodespesa.module#TipoDespesaModule' },
             { path: 'cadastro-politica-despesa', component: CadastroPoliticaDespesaComponent },
             { path: 'cadastro-forma-pagamento', component: CadastroFormaPagamentoComponent },
@@ -49,13 +46,10 @@ const ROUTES: Routes = [
         CadastroPoliticaEmpresaComponent,
         MeusDadosComponent,
         MudarSenhaComponent,
-        CadastroFormaPagamentoComponent,
-        CadastroCentroDeCustoComponent,
-        CadastroMembrosEquipeComponent,
-        CadastroDepartamentoCargosComponent,  
+        CadastroFormaPagamentoComponent,       
         CadastroPoliticaDespesaComponent,
         CadastroFluxoAprovacaoComponent,
-        FinanceiroComponent,
+        FinanceiroComponent,   
     ],
     imports: [
         CommonModule,
