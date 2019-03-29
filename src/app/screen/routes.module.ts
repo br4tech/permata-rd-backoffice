@@ -15,6 +15,7 @@ import { ModalRelatorioComponent } from '../shared/modal-relatorio/modal-relator
 import { DespesasComponent } from './despesas/despesas.component'
 import { RelatoriosComponent } from './relatorios/relatorios.component';
 import { AprovacaoesComponent } from './aprovacaoes/aprovacaoes.component';
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -28,7 +29,8 @@ import { AprovacaoesComponent } from './aprovacaoes/aprovacaoes.component';
         ModalDespesaComponent,  
         ModalPercursoComponent,
         ModalPercursoMapaComponent,
-        ModalRelatorioComponent
+        ModalRelatorioComponent,
+        LoginComponent
     ],
     imports: [         
         RouterModule.forRoot(ROUTES),     
