@@ -1,4 +1,3 @@
-<body>
   <nav class="navbar navbar-expand-lg">
     <div class="container">
       <div class="col-md-6 offset-md-5">
@@ -12,17 +11,7 @@
         <div class="card my-5">
           <div class="card-body">
             <h5 class="card-title text-center">Acesse com os dados da sua conta</h5>
-            <form>
-              <div class="form-group">
-                <input type="email" id="inputEmail" class="form-control" placeholder="E-mail" required autofocus>
-              </div>
-
-              <div class="form-group">
-                <input type="password" id="inputPassword" class="form-control" placeholder="Senha" required>
-              </div>
-
-              <button class="btn btn-sm btn-block btn-acao">ENTRAR</button>
-            </form>
+            <button type="button" class="btn btn-sm btn-acao btn-block" (click)="login()">Login</button>
           </div>
           <div class="card-footer">
             <a href="#" class="text-center btn-block">Esqueceu sua senha?</a>
@@ -32,4 +21,3 @@
       </div>
     </div>
   </div>
-</body>
