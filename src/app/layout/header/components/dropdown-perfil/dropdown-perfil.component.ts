@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { OAuthService } from '../../../../../../node_modules/angular-oauth2-oidc';
 
 @Component({
   selector: 'app-dropdown-perfil',
@@ -7,9 +8,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DropdownPerfilComponent implements OnInit {
 
-  constructor() { }
+  constructor(private oauthService: OAuthService) {  }
 
   ngOnInit() {
+  }
+
+  public logout(){
+    this.oauthService.logOut();
   }
 
 }

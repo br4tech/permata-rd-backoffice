@@ -4,8 +4,9 @@ import { OAuthService, JwksValidationHandler } from 'angular-oauth2-oidc';
 import { authConfig } from './core/auth/auth.config';
 
 @Component({
-  selector: 'body',
-  template: '<router-outlet></router-outlet>'
+  selector: 'app-root',
+  templateUrl: './app.component.html',
+  styleUrls: ['./app.component.scss']
 })
 
 export class AppComponent implements OnInit {
@@ -21,7 +22,7 @@ export class AppComponent implements OnInit {
 
     await this.oauthService.loadDiscoveryDocumentAndTryLogin();
     if (this.oauthService.hasValidIdToken() || this.oauthService.hasValidAccessToken()) {
-      this.router.navigate(["/dashboard"]);
+      this.router.navigate(["/despesas"]);
     }
   }
 
@@ -30,7 +31,7 @@ export class AppComponent implements OnInit {
       if (!(evt instanceof NavigationEnd)) {
         return;
       }
-      window.scrollTo(0, 0)
+     
     });
   }
 }

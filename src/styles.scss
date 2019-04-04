@@ -25,6 +25,11 @@ a{
     height: 100vh;
   }
 
+  .page{
+      margin-bottom: 200px;
+      overflow: hidden;
+  }
+
   .main {
     grid-area: main;    
   }
