@@ -3,6 +3,8 @@ import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 
+import { ChartsModule } from 'ng2-charts';
+
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
@@ -18,6 +20,7 @@ import { RouteModule } from './screen/routes.module';
     AppRoutingModule,
     FormsModule,
     RouteModule,
+    ChartsModule,
   ],
   bootstrap: [AppComponent]
 })
