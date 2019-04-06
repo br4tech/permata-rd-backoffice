@@ -2,11 +2,6 @@
     margin-bottom: 40px;
 }
 
-h3{
-    font-weight: 300 !important;
-    color: #000;
-}
-
 h4 > span{
     font-weight: 300;
     font-size: 1.216em;
@@ -18,22 +13,3 @@ strong{
     font-weight: 500;
 }
 
-.card-header{
-    position: relative;
-    height: 50px;
-    padding: 0;
-    background: transparent;
-    font-weight: bold;
-    background-color: #394263;
-}
-
-.card-title{
-    font-weight: 300;
-    padding: 0 10px;
-    font-size: 14px;
-    line-height: 50px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    color: #fff;
-}
