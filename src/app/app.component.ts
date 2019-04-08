@@ -20,7 +20,7 @@ export class AppComponent implements OnInit {
     this.oauthService.setStorage(localStorage);
     this.oauthService.tokenValidationHandler = new JwksValidationHandler();
 
-    await this.oauthService.loadDiscoveryDocumentAndTryLogin();
+    await this.oauthService.initImplicitFlow();
     if (this.oauthService.hasValidIdToken() || this.oauthService.hasValidAccessToken()) {
       this.router.navigate(["/despesas"]);
     }
