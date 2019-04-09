@@ -8,4 +8,5 @@ export const authConfig: AuthConfig = {
     redirectUri: window.location.origin + "/login-callback",
     scope:"openid profile email",
     oidc: true,
+    skipIssuerCheck: true,
 }
