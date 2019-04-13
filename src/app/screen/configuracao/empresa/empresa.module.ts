@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { Routes } from '@angular/router';
 import { RouterModule } from '@angular/router';
 
+import { EmpresaService } from './empresa.service';
+
 import { ListaEmpresaComponent } from './lista-empresa/lista-empresa.component';
 import { CadastroEmpresaComponent } from './cadastro-empresa/cadastro-empresa.component';
 import { DadosGeraisEmpresaComponent } from './dados-gerais-empresa/dados-gerais-empresa.component';
@@ -35,13 +37,13 @@ const ROUTES: Routes = [
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild(ROUTES),
+    RouterModule.forChild(ROUTES),   
   ],
   exports: [
     RouterModule
   ],
   providers: [
-
+    EmpresaService
   ]
 })
 export class EmpresaModule { }

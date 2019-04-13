@@ -1,5 +1,14 @@
 import { EnderecoViewModewl, TelefoneViewModewl } from '../../util/util.viewmodel';
 
+
+export class EmpresaListaViewModel{
+    EmpresaId: number;
+    FantasiaOuNome: string;
+    RazaoOuNome: string;
+    CnpjOuCpf: string;
+    Moeda: string;
+}
+
 export class DadosGeraisViewModewl{
     IdEmpresa: number
     NomeFantasia: string;

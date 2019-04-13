@@ -32,11 +32,11 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Caroline e Ricardo Contábil ME</td>
-                  <td>20.203.540/0001-80</td>
-                  <td>45.318.224/0001-84</td>
-                  <td>BRL</td>
+                <tr *ngFor="let e of empresas">
+                  <td>{{ e.FantasiaOuNome }}</td>
+                  <td>{{ e.RazaoOuNome }}}</td>
+                  <td>{{ e.CnpjOuCpf }}</td>                  
+                  <td>{{ e.Moeda }}</td>
                   <td>
                     <div class="pull-right">
                       <button class="btn btn-sm btn-primary">
