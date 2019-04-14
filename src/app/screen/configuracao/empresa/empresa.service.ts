@@ -13,8 +13,7 @@ export class EmpresaService {
 
      obterEmpresas(): Promise<any> {
           return this.http.get(environment.base_url_empresa + "listarempresa")
-               .toPromise()
-               .then((empresa: any) => empresa.json());
+               .toPromise();               
      }
 
      private handleError(error: Response) {

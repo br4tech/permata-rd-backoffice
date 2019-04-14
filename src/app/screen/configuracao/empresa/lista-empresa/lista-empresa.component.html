@@ -32,10 +32,10 @@
                 </tr>
               </thead>
               <tbody>
-                <tr *ngFor="let e of empresas">
+                <tr *ngFor="let e of empresas; let i=index;">
                   <td>{{ e.FantasiaOuNome }}</td>
                   <td>{{ e.RazaoOuNome }}}</td>
-                  <td>{{ e.CnpjOuCpf }}</td>                  
+                  <td>{{ e.cnpjOuCpf }}</td>                  
                   <td>{{ e.Moeda }}</td>
                   <td>
                     <div class="pull-right">

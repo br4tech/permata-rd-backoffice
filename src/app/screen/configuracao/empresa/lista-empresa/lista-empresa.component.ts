@@ -11,7 +11,7 @@ import { EmpresaListaViewModel } from '../empresa.viewmodel';
 })
 export class ListaEmpresaComponent implements OnInit {
 
-  empresas: EmpresaListaViewModel[];
+  empresas : any = [];
   itens: any;
 
   constructor(
@@ -20,12 +20,15 @@ export class ListaEmpresaComponent implements OnInit {
 
   ngOnInit() {
     this.empresa.obterEmpresas()
-      .then((empresas: any) => {
-        this.empresas = empresas;
+      .then((empresa: any) => {        
+          this.empresas = empresa
+       
       })
       .catch((param: any) => {
         console.log(param)
-      })
+      });
+
+      console.log(this.empresas)
   }
 
 }
