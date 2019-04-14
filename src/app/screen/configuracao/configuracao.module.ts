@@ -23,7 +23,7 @@ const ROUTES: Routes = [
             { path: 'cadastro-polita-empresa', component: CadastroPoliticaEmpresaComponent },
             { path: 'meus-dados', component: MeusDadosComponent },
             { path: 'mudar-senha', component: MudarSenhaComponent },
-            { path: 'empresa', loadChildren: './empresa/empresa.module#EmpresaModule' },
+            { path: 'empresa', loadChildren:'./empresa/empresa.module#EmpresaModule' },
             { path: 'departamento-cargos', loadChildren: './departamento/departamento.module#DepartamentoModule' },
             { path: 'membros-equipe', loadChildren: './membro/membro.module#MembroModule' },
             { path: 'centro-custos', loadChildren: './centro-de-custo/centrodecusto.module#CentroDeCustoModule' },
@@ -59,7 +59,7 @@ const ROUTES: Routes = [
         RouterModule
     ],
     providers: [
-
+    
     ]
 
 })

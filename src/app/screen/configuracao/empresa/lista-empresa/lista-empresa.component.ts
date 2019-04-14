@@ -12,17 +12,20 @@ import { EmpresaListaViewModel } from '../empresa.viewmodel';
 export class ListaEmpresaComponent implements OnInit {
 
   empresas: EmpresaListaViewModel[];
+  itens: any;
 
   constructor(
     private empresa: EmpresaService
   ) { }
 
   ngOnInit() {
-    this.empresa.obterEmpresas().subscribe(data => {
-      data.map(f => {
-           return this.empresas =  Object.assign(new EmpresaListaViewModel(), f);
-      });
-    });
+    this.empresa.obterEmpresas()
+      .then((empresas: any) => {
+        this.empresas = empresas;
+      })
+      .catch((param: any) => {
+        console.log(param)
+      })
   }
 
 }
