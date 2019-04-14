@@ -33,13 +33,13 @@
               </thead>
               <tbody>
                 <tr *ngFor="let e of empresas; let i=index;">
-                  <td>{{ e.FantasiaOuNome }}</td>
-                  <td>{{ e.RazaoOuNome }}}</td>
-                  <td>{{ e.cnpjOuCpf }}</td>                  
-                  <td>{{ e.Moeda }}</td>
+                  <td>{{ e.razaoOuNome }}</td>
+                  <td>{{ e.razaoOuNome }}}</td>
+                  <td>{{ e.cpnjOuCpf }}</td>                  
+                  <td>{{ e.moeda }}</td>
                   <td>
                     <div class="pull-right">
-                      <button class="btn btn-sm btn-primary">
+                      <button class="btn btn-sm btn-primary" (click)="editar(e.empresaId)">
                         <i class="fa fa-pencil"></i> Editar
                       </button> &nbsp;
                       <button class="btn btn-sm btn-danger">

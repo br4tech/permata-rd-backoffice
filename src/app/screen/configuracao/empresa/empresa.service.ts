@@ -11,10 +11,15 @@ export class EmpresaService {
      constructor(private http: HttpClient) {
      }
 
-     obterEmpresas(): Promise<any> {
-          return this.http.get(environment.base_url_empresa + "listarempresa")
-               .toPromise();               
+     obterEmpresas(): Observable<any> {
+          return this.http.get(environment.base_url_empresa + "listarempresa").pipe(
+            map(this.extractData));
      }
+
+     private extractData(res: Response) {
+          let body = res;
+          return body || { };
+        }
 
      private handleError(error: Response) {
           console.error(error);

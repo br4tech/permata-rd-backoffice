@@ -19,7 +19,9 @@ const ROUTES: Routes = [
     path: 'cadastro-empresa', component: CadastroEmpresaComponent, children: [
       { path: '', redirectTo: 'empresa-dados-gerais', component: DadosGeraisEmpresaComponent },
       { path: 'empresa-dados-gerais', component: DadosGeraisEmpresaComponent },
+      { path: 'empresa-dados-gerais/:id', component: DadosGeraisEmpresaComponent },
       { path: 'empresa-moeda', component: EmpresaMoedasComponent },
+      { path: 'empresa-moeda/:id', component: EmpresaMoedasComponent },
       { path: 'empresa-preferencia', component: EmpresaPreferenciaComponent },
       { path: 'empresa-polita-despesa', component: EmpresaPolitaDespesaComponent }
     ]

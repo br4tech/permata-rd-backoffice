@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 
 import { EmpresaService } from '../empresa.service';
 
@@ -15,20 +16,25 @@ export class ListaEmpresaComponent implements OnInit {
   itens: any;
 
   constructor(
-    private empresa: EmpresaService
+    private empresa: EmpresaService,
+    private route: ActivatedRoute, 
+    private router: Router
   ) { }
 
   ngOnInit() {
-    this.empresa.obterEmpresas()
-      .then((empresa: any) => {        
-          this.empresas = empresa
-       
-      })
-      .catch((param: any) => {
-        console.log(param)
-      });
+    this.obterEmpresas();
+  }
 
-      console.log(this.empresas)
+  obterEmpresas() {
+    this.empresas = [];
+    this.empresa.obterEmpresas().subscribe((data: {}) => {
+      console.log(data);
+      this.empresas = data;
+    });
+  }
+
+  editar(Id: Number){
+    this.router.navigate(['/cadastro-empresa/empresa-dados-gerais-edit/'+ Id]);
   }
 
 }
