@@ -8,6 +8,5 @@ export const authConfig: AuthConfig = {
     postLogoutRedirectUri: environment.base_url_postback,
     redirectUri: window.location.origin + "/login-callback",
     scope:"openid profile email",
-    oidc: true,
-    skipIssuerCheck: true,
+    oidc: true    
 }
