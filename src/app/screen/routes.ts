@@ -19,7 +19,7 @@ export const ROUTES: Routes = [
           component: LayoutComponent, 
           canActivate: [AuthGuard],
           children: [
-                        { path: '', redirectTo: 'despesas', pathMatch: 'full' },                       
+                        { path: '', redirectTo: 'despesas', pathMatch: 'prefix' },                       
                         { path: 'despesas', component: DespesasComponent },
                         { path: 'relatorios', component: RelatoriosComponent },
                         { path: 'aprovacoes', component: AprovacaoesComponent },

@@ -27,14 +27,13 @@ export class ListaEmpresaComponent implements OnInit {
 
   obterEmpresas() {
     this.empresas = [];
-    this.empresa.obterEmpresas().subscribe((data: {}) => {
-      console.log(data);
+    this.empresa.obterEmpresas().subscribe((data: {}) => {     
       this.empresas = data;
     });
   }
 
   editar(Id: Number){
-    this.router.navigate(['/cadastro-empresa/empresa-dados-gerais-edit/'+ Id]);
+    this.router.navigate(['configuracao/empresa/cadastro-empresa/empresa-dados-gerais/'+ Id]);
   }
 
 }

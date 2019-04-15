@@ -16,7 +16,7 @@ const ROUTES: Routes = [
   { path: '', component: ListaEmpresaComponent },
   { path: 'listar-empresas', component: ListaEmpresaComponent },
   {
-    path: 'cadastro-empresa', component: CadastroEmpresaComponent, children: [
+    path: 'cadastro-empresa', component: CadastroEmpresaComponent, pathMatch: 'prefix', children: [
       { path: '', redirectTo: 'empresa-dados-gerais', component: DadosGeraisEmpresaComponent },
       { path: 'empresa-dados-gerais', component: DadosGeraisEmpresaComponent },
       { path: 'empresa-dados-gerais/:id', component: DadosGeraisEmpresaComponent },
