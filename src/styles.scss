@@ -160,6 +160,12 @@ body{
     color: rgba(79,79,79,.7);
 }
 
+.conteudo {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
  .icone-centro{
      padding: 30px;
  }
