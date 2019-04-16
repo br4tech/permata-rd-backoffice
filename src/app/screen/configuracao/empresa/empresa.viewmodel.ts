@@ -7,6 +7,7 @@ export class EmpresaListaViewModel{
     RazaoOuNome: string;
     CnpjOuCpf: string;
     Moeda: string;
+    Ativa: boolean;
 }
 
 export class DadosGeraisViewModewl{

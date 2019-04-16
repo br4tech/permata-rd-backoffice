@@ -32,11 +32,11 @@
                 </tr>
               </thead>
               <tbody>
-                <tr *ngFor="let e of empresas; let i=index;">
-                  <td>{{ e.razaoOuNome }}</td>
-                  <td>{{ e.razaoOuNome }}}</td>
-                  <td>{{ e.cpnjOuCpf }}</td>                  
-                  <td>{{ e.moeda }}</td>
+                <tr *ngFor="let e of empresasAtivas; let i=index;">
+                  <td>{{ e.RazaoOuNome }}</td>
+                  <td>{{ e.RazaoOuNome }}</td>
+                  <td>{{ e.CpnjOuCpf }}</td>                  
+                  <td>{{ e.Moeda }}</td>
                   <td>
                     <div class="pull-right">
                       <button class="btn btn-sm btn-primary" (click)="editar(e.empresaId)">
@@ -71,18 +71,18 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td>Caroline e Ricardo Contábil ME</td>
-                  <td>20.203.540/0001-80</td>
-                  <td>45.318.224/0001-84</td>
-                  <td>BRL</td>
+                <tr *ngFor="let e of empresasInativas; let i=index;">
+                  <td>{{ e.RazaoOuNome }}</td>
+                  <td>{{ e.RazaoOuNome }}</td>
+                  <td>{{ e.CpnjOuCpf }}</td>                  
+                  <td>{{ e.Moeda }}</td>
                   <td>
                     <div class="pull-right">
-                      <button class="btn btn-sm btn-primary">
-                        <i class="fa fa-pencil"></i> Visualizar
+                      <button class="btn btn-sm btn-primary" (click)="editar(e.empresaId)">
+                        <i class="fa fa-pencil"></i> Editar
                       </button> &nbsp;
                       <button class="btn btn-sm btn-danger">
-                        <i class="fa fa-trash"></i> Ativar
+                        <i class="fa fa-trash"></i> Remover
                       </button>
                     </div>
                   </td>

@@ -12,12 +12,13 @@ import { EmpresaListaViewModel } from '../empresa.viewmodel';
 })
 export class ListaEmpresaComponent implements OnInit {
 
-  empresas : any = [];
+  empresasAtivas: EmpresaListaViewModel[] = [];
+  empresasInativas: EmpresaListaViewModel[] = [];
   itens: any;
 
   constructor(
     private empresa: EmpresaService,
-    private route: ActivatedRoute, 
+    private route: ActivatedRoute,
     private router: Router
   ) { }
 
@@ -25,15 +26,20 @@ export class ListaEmpresaComponent implements OnInit {
     this.obterEmpresas();
   }
 
-  obterEmpresas() {
-    this.empresas = [];
-    this.empresa.obterEmpresas().subscribe((data: {}) => {     
-      this.empresas = data;
-    });
+  obterEmpresas() {    
+    this.empresa.obterEmpresas().subscribe(data => {
+      data.map(f => {       
+        if (f.Ativa) {
+          return this.empresasAtivas.push(Object.assign(new EmpresaListaViewModel(), f));
+        } else {
+          return this.empresasInativas.push(Object.assign(new EmpresaListaViewModel(), f));
+        }
+      });
+    })
   }
 
   editar(Id: Number){
-    this.router.navigate(['configuracao/empresa/cadastro-empresa/empresa-dados-gerais/'+ Id]);
-  }
+        this.router.navigate(['configuracao/empresa/cadastro-empresa/empresa-dados-gerais/' + Id]);
+      }
 
 }
