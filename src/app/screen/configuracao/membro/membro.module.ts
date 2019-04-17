@@ -14,11 +14,11 @@ const ROUTES: Routes = [
     {path: '', component: ListaMembroComponent },
     {path: 'listar-membro', component: ListaMembroComponent },
     {      
-        path: 'cadastro-membro', component: CadastroMembrosEquipeComponent, children: [
-            { path: '', redirectTo:'editar-membro-equipe', component: DadosMembroComponent},
-            { path: 'editar-membro-equipe', component: DadosMembroComponent},
-            { path: 'configuracao-membro', component: ConfiguracaoMembroComponent },
-            { path: 'lista-membro-projetos', component: ListaProjetoMembroComponent },
+        path: ':id', component: CadastroMembrosEquipeComponent, children: [
+            { path: '', redirectTo:'equipe', component: DadosMembroComponent},
+            { path: 'equipe', component: DadosMembroComponent},
+            { path: 'configuracao', component: ConfiguracaoMembroComponent },
+            { path: 'projetos', component: ListaProjetoMembroComponent },
         ]
     }
 ]

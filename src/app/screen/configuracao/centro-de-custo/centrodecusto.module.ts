@@ -12,10 +12,10 @@ const ROUTES: Routes = [
   { path: '', component: ListaCentroDeCustoComponent },
   { path: 'listar-centro-custos', component: ListaCentroDeCustoComponent },
   {
-    path: 'cadastro-centro-custos', component: CadastroCentroDeCustoComponent, children: [
-      { path: '', redirectTo: 'centro-dados-gerais', component: DadosCentroDeCustosComponent },
-      { path: 'centro-dados-gerais', component: DadosCentroDeCustosComponent },
-      { path: 'centro-membro', component: CentroDeCustosMembroComponent },     
+    path: ':id', component: CadastroCentroDeCustoComponent, children: [
+      { path: '', redirectTo: 'dados-gerais', component: DadosCentroDeCustosComponent },
+      { path: 'dados-gerais', component: DadosCentroDeCustosComponent },
+      { path: 'membro', component: CentroDeCustosMembroComponent },     
     ]
   }
 ]

@@ -12,10 +12,10 @@ const ROUTES: Routes = [
     {path: '', component: ListaDepartamentoComponent },
     {path: 'listar-departamentos', component: ListaDepartamentoComponent },
     {      
-        path: 'editar-departamento', component: CadastroDepartamentoCargosComponent, children: [
-            { path: '', redirectTo:'editar-departamento', component: DadosDepartamentoComponent },
-            { path: 'editar-departamento', component: DadosDepartamentoComponent },
-            { path: 'departamento-membros', component: DepartamentoMembroComponent},
+        path: ':id', component: CadastroDepartamentoCargosComponent, children: [
+            { path: '', redirectTo: 'editar', component: DadosDepartamentoComponent }, 
+            { path: 'editar', component: DadosDepartamentoComponent }, 
+            { path: 'membros', component: DepartamentoMembroComponent},
         ]
     }
 ]

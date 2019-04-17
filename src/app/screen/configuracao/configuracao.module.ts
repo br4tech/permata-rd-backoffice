@@ -25,7 +25,7 @@ const ROUTES: Routes = [
             { path: 'mudar-senha', component: MudarSenhaComponent },
             { path: 'empresa', loadChildren:'./empresa/empresa.module#EmpresaModule' },
             { path: 'departamento-cargos', loadChildren: './departamento/departamento.module#DepartamentoModule' },
-            { path: 'membros-equipe', loadChildren: './membro/membro.module#MembroModule' },
+            { path: 'membros', loadChildren: './membro/membro.module#MembroModule' },
             { path: 'centro-custos', loadChildren: './centro-de-custo/centrodecusto.module#CentroDeCustoModule' },
             { path: 'projeto', loadChildren: './projeto/projeto.module#ProjetoModule'},
             { path: 'politica-quilometragem', loadChildren: './politica-quilometragem/quilometragem.module#QuilometragemModule' },
