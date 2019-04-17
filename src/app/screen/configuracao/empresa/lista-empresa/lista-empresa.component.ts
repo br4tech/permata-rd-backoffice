@@ -28,7 +28,7 @@ export class ListaEmpresaComponent implements OnInit {
 
   obterEmpresas() {    
     this.empresa.obterEmpresas().subscribe(data => {
-      data.map(f => {       
+      data.map(f => { 
         if (f.Ativa) {
           return this.empresasAtivas.push(Object.assign(new EmpresaListaViewModel(), f));
         } else {
@@ -39,7 +39,7 @@ export class ListaEmpresaComponent implements OnInit {
   }
 
   editar(Id: Number){
-        this.router.navigate(['configuracao/empresa/cadastro-empresa/empresa-dados-gerais/' + Id]);
+        this.router.navigate(['configuracao/empresa/'+ Id +'/dados-gerais']);
       }
 
 }

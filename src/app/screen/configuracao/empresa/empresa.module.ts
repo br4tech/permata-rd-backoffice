@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { Routes } from '@angular/router';
 import { RouterModule } from '@angular/router';
 
-import { EmpresaService } from './empresa.service';
+import { EmpresaService, GridEmpresaResolver } from './empresa.service';
 
 import { ListaEmpresaComponent } from './lista-empresa/lista-empresa.component';
 import { CadastroEmpresaComponent } from './cadastro-empresa/cadastro-empresa.component';
@@ -14,16 +14,15 @@ import { EmpresaPolitaDespesaComponent } from './empresa-polita-despesa/empresa-
 
 const ROUTES: Routes = [
   { path: '', component: ListaEmpresaComponent },
-  { path: 'listar-empresas', component: ListaEmpresaComponent },
+  { path: 'listar-empresas', component: ListaEmpresaComponent,  resolve: {data: GridEmpresaResolver}  },
   {
-    path: 'cadastro-empresa', component: CadastroEmpresaComponent, pathMatch: 'prefix', children: [
-      { path: '', redirectTo: 'empresa-dados-gerais', component: DadosGeraisEmpresaComponent },
-      { path: 'empresa-dados-gerais', component: DadosGeraisEmpresaComponent },
-      { path: 'empresa-dados-gerais/:id', component: DadosGeraisEmpresaComponent },
-      { path: 'empresa-moeda', component: EmpresaMoedasComponent },
-      { path: 'empresa-moeda/:id', component: EmpresaMoedasComponent },
-      { path: 'empresa-preferencia', component: EmpresaPreferenciaComponent },
-      { path: 'empresa-polita-despesa', component: EmpresaPolitaDespesaComponent }
+    path: ':id', component: CadastroEmpresaComponent, children: [  
+      { path: '',  component: DadosGeraisEmpresaComponent},   
+      { path: 'dados-gerais', component: DadosGeraisEmpresaComponent },     
+      { path: 'moeda', component: EmpresaMoedasComponent },   
+      { path: 'preferencia', component: EmpresaPreferenciaComponent },      
+      { path: 'polita-despesa', component: EmpresaPolitaDespesaComponent },
+     
     ]
   }
 ]
@@ -45,7 +44,8 @@ const ROUTES: Routes = [
     RouterModule
   ],
   providers: [
-    EmpresaService
+    EmpresaService,
+    GridEmpresaResolver
   ]
 })
 export class EmpresaModule { }

@@ -6,10 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cadastro-empresa.component.scss']
 })
 export class CadastroEmpresaComponent implements OnInit {
+  empresaId: number = 1;
 
   constructor() { }
 
   ngOnInit() {
+       console.log("Aqui")
   }
 
 }
