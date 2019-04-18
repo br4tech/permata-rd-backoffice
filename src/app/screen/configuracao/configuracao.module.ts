@@ -30,7 +30,7 @@ const ROUTES: Routes = [
             { path: 'projeto', loadChildren: './projeto/projeto.module#ProjetoModule'},
             { path: 'politica-quilometragem', loadChildren: './politica-quilometragem/quilometragem.module#QuilometragemModule' },
             { path: 'tipo-despesa', loadChildren: './tipo-despesa/tipodespesa.module#TipoDespesaModule' },
-            { path: 'cadastro-politica-despesa', component: CadastroPoliticaDespesaComponent },
+            { path: 'politica-despesa', component: CadastroPoliticaDespesaComponent },
             { path: 'cadastro-forma-pagamento', component: CadastroFormaPagamentoComponent },
             { path: 'cadastro-fluxo-aprovacao', component: CadastroFluxoAprovacaoComponent },
             { path: 'financeiro', component: FinanceiroComponent }
