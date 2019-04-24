@@ -13,7 +13,7 @@ export class EmpresaService {
      }
 
      obterEmpresas(): Observable<any> {
-          return this.http.get(environment.base_url_empresa + "listarempresa").pipe(
+          return this.http.get(environment.base_url_empresa + "listarempresa?TenantId=dc5804f3-87ef-4094-b5fa-735ed576ba61").pipe(
             map(this.extractData));
      }
 

@@ -14,6 +14,7 @@ export class DadosGeraisEmpresaComponent implements OnInit {
 
   ngOnInit() {
     this.route.parent.snapshot.params['id'];
+    
   }
 
 }
