@@ -7,10 +7,10 @@ import { ListaCentroDeCustoComponent } from './lista-centro-de-custo/lista-centr
 import { CadastroCentroDeCustoComponent } from './cadastro-centro-de-custo/cadastro-centro-de-custo.component';
 import { DadosCentroDeCustosComponent} from './dados-centro-de-custos/dados-centro-de-custos.component';
 import { CentroDeCustosMembroComponent } from './centro-de-custos-membro/centro-de-custos-membro.component';
+import { CentroDeCustoService } from './centrodecusto.service';
 
 const ROUTES: Routes = [
   { path: '', component: ListaCentroDeCustoComponent },
-  { path: 'listar-centro-custos', component: ListaCentroDeCustoComponent },
   {
     path: ':id', component: CadastroCentroDeCustoComponent, children: [
       { path: '', redirectTo: 'dados-gerais', component: DadosCentroDeCustosComponent },
@@ -35,7 +35,7 @@ const ROUTES: Routes = [
     RouterModule
   ],
   providers: [
-
+    CentroDeCustoService
   ]
 })
 export class CentroDeCustoModule { }

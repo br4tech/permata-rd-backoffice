@@ -22,11 +22,12 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>Desenvolvimento</td>
+            
+            <tr *ngFor="let item of items; index as i;">
+              <td>{{item.Descricao}}</td>
               <td>
                 <div class="pull-right">
-                  <button class="btn btn-sm btn-primary">
+                  <button class="btn btn-sm btn-primary" (click)="editar(item.Id)">
                     <i class="fa fa-pencil"></i> Editar
                   </button> &nbsp;
                   <button class="btn btn-sm btn-danger">
@@ -35,32 +36,7 @@
                 </div>
               </td>
             </tr>
-            <tr>
-              <td>Implantação</td>
-              <td>
-                <div class="pull-right">
-                  <button class="btn btn-sm btn-primary">
-                    <i class="fa fa-pencil"></i> Editar
-                  </button> &nbsp;
-                  <button class="btn btn-sm btn-danger">
-                    <i class="fa fa-trash"></i> Remover
-                  </button>
-                </div>
-              </td>
-            </tr>
-            <tr>
-              <td>Suporte</td>
-              <td>
-                <div class="pull-right">
-                  <button class="btn btn-sm bbtn-primary">
-                    <i class="fa fa-pencil"></i> Editar
-                  </button> &nbsp;
-                  <button class="btn btn-sm btn-danger">
-                    <i class="fa fa-trash"></i> Remover
-                  </button>
-                </div>
-              </td>
-            </tr>
+            
           </tbody>
         </table>
       </div>
