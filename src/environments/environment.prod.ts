@@ -7,4 +7,5 @@ export const environment = {
   base_url_postback: "https://permata.com.br/login-callback",
 
   base_url_empresa: "https://api-permata.azurewebsites.net/api/empresa/",
+  base_url_centrodecusto: "https://api-permata.azurewebsites.net/api/centrodecusto/"
 };

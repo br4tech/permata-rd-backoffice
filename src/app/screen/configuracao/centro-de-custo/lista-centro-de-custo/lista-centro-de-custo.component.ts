@@ -13,7 +13,7 @@ import { Router } from '@angular/router';
 
 export class ListaCentroDeCustoComponent implements OnInit {
 
-  private items: CentroDeCustoViewModel[];
+  items: CentroDeCustoViewModel[];
   private onDestroy: Subject<void> = new Subject<void>();
 
   constructor(private centroDeCustoService: CentroDeCustoService,
