@@ -1,23 +1,13 @@
-  <nav class="navbar navbar-expand-lg">
-    <div class="container">
-      <div class="col-md-6 offset-md-5">
-        <img src="../../../../assets/img/logo.png" class="d-inline-block align-top" alt="">
-      </div>          
+<div class="wrapper">
+  <div class="wrapped-div">
+    <div class="tab-header">
+      <h2 routerLink='/login' routerLinkActive='active'>Acessar</h2>
+      <h2 routerLink='/registrar' routerLinkActive='active'>Cadastrar</h2>
     </div>
-  </nav>
-  <div class="container">
     <div class="row">
-      <div class="col-sm-9 col-md-7 col-lg-5 mx-auto">
-        <div class="card my-5">
-          <div class="card-body">
-            <h5 class="card-title text-center">Acesse com os dados da sua conta</h5>
-            <button type="button" class="btn btn-sm btn-acao btn-block" (click)="login()">Login</button>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="text-center btn-block">Esqueceu sua senha?</a>
-            <a href="#" class="text-center btn-block">Não possui uma conta? Crie agora!</a>
-          </div>
-        </div>
+      <div class="col-md-10 offset-md-1">
+        <router-outlet></router-outlet>
       </div>
     </div>
   </div>
+</div>

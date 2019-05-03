@@ -33,7 +33,8 @@ const ROUTES: Routes = [
         CadastroMembrosEquipeComponent,
         DadosMembroComponent,
         ConfiguracaoMembroComponent, 
-        ListaProjetoMembroComponent, BancoMembroComponent
+        ListaProjetoMembroComponent,
+        BancoMembroComponent
     ],
     imports: [
         CommonModule,

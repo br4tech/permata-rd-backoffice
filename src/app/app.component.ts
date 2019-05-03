@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, NavigationEnd } from '@angular/router';
-import { OAuthService, JwksValidationHandler } from 'angular-oauth2-oidc';
-import { authConfig } from './core/auth/auth.config';
+
 
 @Component({
   selector: 'app-root',
@@ -9,29 +7,6 @@ import { authConfig } from './core/auth/auth.config';
   styleUrls: ['./app.component.scss']
 })
 
-export class AppComponent implements OnInit {
-  constructor(private router: Router,
-    private oauthService: OAuthService) {
-    this.configureWithNewConfigApi();
-  }
-
-  private async configureWithNewConfigApi() {
-    this.oauthService.configure(authConfig);
-    this.oauthService.setStorage(localStorage);
-    this.oauthService.tokenValidationHandler = new JwksValidationHandler();
-
-    await this.oauthService.loadDiscoveryDocumentAndTryLogin();
-    if (this.oauthService.hasValidIdToken() || this.oauthService.hasValidAccessToken()) {
-      this.router.navigate(["/despesas"]);
-    }
-  }
-
-  ngOnInit() {
-    this.router.events.subscribe((evt) => {
-      if (!(evt instanceof NavigationEnd)) {
-        return;
-      }
-     
-    });
-  }
+export class AppComponent {
+  title = 'Permata RD';
 }

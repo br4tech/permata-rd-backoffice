@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import {ActivatedRouteSnapshot, Router, RouterStateSnapshot, Resolve } from '@angular/router'
 import { HttpClient } from '@angular/common/http';
-import { Observable, of } from 'rxjs';
-import { tap, map, catchError } from 'rxjs/operators';
+import { Observable} from 'rxjs';
+import { map} from 'rxjs/operators';
 
 import { environment } from '../../../../environments/environment';
 
