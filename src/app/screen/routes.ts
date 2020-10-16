@@ -29,7 +29,7 @@ export const ROUTES: Routes = [
         {
                 path: '',
                 component: LayoutComponent,
-                canActivate: [AuthGuard],
+                // canActivate: [AuthGuard],
                 children: [
                         { path: '', redirectTo: 'despesas', pathMatch: 'full' },
                         { path: 'despesas', component: DespesasComponent },
