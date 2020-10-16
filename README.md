@@ -19,7 +19,7 @@ dos gasto de suas viagens.
     Relatório é compostos pelos gastos da despesas, sumarizamos as depesas em forma de realtorio,
    para que o mesmo possa passar pela processo de aprovação.
 
-  _** Obs: No relatorios pode conter os mais diversos tipos de despesas.
+  _**Obs:**_  No relatorios pode conter os mais diversos tipos de despesas.
 
 ### Aprovações
 
@@ -29,14 +29,14 @@ dos gasto de suas viagens.
 
   Modulo apenas para usuários com perfil de gerência.
   
-  _** Obs: Usuário administrador
+  _**Obs:**_  Usuário administrador
   É possivel gerenciar os gasto da equipe/departamento, aprovar ou reprovar um relatório.   
 
 ### Configuração
 
   No menu configuração que existe no dropdown do usuário, é habilitado a opção configuração. 
   
-  _** Obs: Essa opção tem opções reduzidas caso o usuario não for administrador.
+  _**Obs:**_  Essa opção tem opções reduzidas caso o usuario não for administrador.
 
       - [x] Administrador: Consegue configurar os itens de forma de pagamento e alterar as politicas. 
       Assim como adicionar empresas filiais ou matriz.
