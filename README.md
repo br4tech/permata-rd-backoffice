@@ -1,11 +1,11 @@
-# Permata RD (Reembolso de Despesas)
+# :chart_with_downwards_trend: Permata RD (Reembolso de Despesas)
 
  Permata RD é um sistema de gestão de reembolso, onde os membro de um empresa pode realizar as prestação de contas,
 dos gasto de suas viagens.
 
- ## O Sistema é composto por 4 menu principais:
+ ## :clipboard: O Sistema é composto por 4 menu principais:
   
- ### Despesas:
+ ### :pushpin:  Despesas:
 
   #### Nesse modulo o usuário consegue lançar depesas, que podem ser:
 
@@ -14,25 +14,25 @@ dos gasto de suas viagens.
      o mesmo deve inserir os valores junto com os comprovantes dos gastos.
      - [x] Refeiçaõ: Também seguindo a politica da empresa.
 
-### Relatórios
+### :pushpin:  Relatórios
 
     Relatório é compostos pelos gastos da despesas, sumarizamos as depesas em forma de realtorio,
    para que o mesmo possa passar pela processo de aprovação.
 
   _**Obs:**_  No relatorios pode conter os mais diversos tipos de despesas.
 
-### Aprovações
+### :pushpin:  Aprovações
 
   Usuário consegue verificar status do relatório(aprovado ou não aprovado).  
 
-### Gestão
+### :pushpin:  Gestão
 
   Modulo apenas para usuários com perfil de gerência.
   
   _**Obs:**_  Usuário administrador
   É possivel gerenciar os gasto da equipe/departamento, aprovar ou reprovar um relatório.   
 
-### Configuração
+### :pushpin:  Configuração
 
   No menu configuração que existe no dropdown do usuário, é habilitado a opção configuração. 
   
