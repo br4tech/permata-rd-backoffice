@@ -8,15 +8,15 @@ dos gasto de suas viagens.
   
  ## Despesas:
 
-   Nesse modulo o usuario consegue lançar suas depesas, que podem ser:
+   ###Nesse modulo o usuario consegue lançar suas depesas, que podem ser:
 
-     Viagem: Usuario declara o valor da viagem
-     Hospedagem: Seguindo a politica de viagem da empresa, o mesmo deve inserir os valores junto com os comprovantes dos gasto gerado no hotel
-     Refeiçaõ: Também seguinde a politica da empresa
+     - [x] Viagem: Usuario declara o valor da viagem
+     - [x] Hospedagem: Seguindo a politica de viagem da empresa, o mesmo deve inserir os valores junto com os comprovantes dos gasto gerado no hotel
+     - [x] Refeiçaõ: Também seguinde a politica da empresa
 
 ## Relatórios
 
-     Nesse modulo é onde o usuario agrupa os valores gastos, gerando assim um relatorio para ser aprovado/reprovado pelo seu superior. Caso o mesmo tenha algum adiantamento é vinculado o adiantamento no relatórios, e as despesas são abatidas nesse adiantamento. 
+     ###Nesse modulo é onde o usuario agrupa os valores gastos, gerando assim um relatorio para ser aprovado/reprovado pelo seu superior. Caso o mesmo tenha algum adiantamento é vinculado o adiantamento no relatórios, e as despesas são abatidas nesse adiantamento. 
      No relatorios pode conter os mais diversos tipos de despesas.
 
 ## Aprovações
@@ -30,10 +30,10 @@ dos gasto de suas viagens.
 
 ### Configuração
 
-     No menu configuração que existe no dropdown do usuario, é habilitado a opção configuração. Essa opção tem opções reduzidas caso o usuario não for administrador.
+     ##No menu configuração que existe no dropdown do usuario, é habilitado a opção configuração. Essa opção tem opções reduzidas caso o usuario não for administrador.
 
-      Administrador: Consegue configurar os itens de forma de pagamento e alterar as politicas. Assim como adicionar empresas filiais ou matriz.
+      - [x] Administrador: Consegue configurar os itens de forma de pagamento e alterar as politicas. Assim como adicionar empresas filiais ou matriz.
 
-      Usuario: Caso o usuario  possui um perfil simples, o mesmo vai apenas poder alterar a sua senha e seus dados como e-mail e conta.
+      - [x] Usuario: Caso o usuario  possui um perfil simples, o mesmo vai apenas poder alterar a sua senha e seus dados como e-mail e conta.
      
    
