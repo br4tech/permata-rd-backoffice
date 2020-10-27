@@ -1,9 +1,4 @@
-<nav class="navbar header navbar-expand-lg navbar-light bg-light">
-
-  <a class=" btn-icon-toggle menubar-toggle active" data-toggle="menubar" href="javascript:void(0);">
-    <i class="fa fa-bars"></i>
-  </a>
-  
+<nav class="navbar header navbar-expand-lg navbar-light bg-light">  
   <a class="navbar-brand" href="#">
     <img src="../../../../assets/img/logo.png" height="45" class="logo" alt="">
   </a>
@@ -12,9 +7,14 @@
     <span class="navbar-toggler-icon"></span>
   </button>
 
-  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-    <app-dropdown-notificacao></app-dropdown-notificacao>
-    <app-dropdown-perfil></app-dropdown-perfil>  
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <app-menu></app-menu>
+    </div>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+      <app-dropdown-notificacao></app-dropdown-notificacao>
+      <app-dropdown-perfil></app-dropdown-perfil>  
+    </div>
   </div>
 </nav>
 

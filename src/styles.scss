@@ -58,7 +58,6 @@ a:hover {
     grid-area: main;  
   }
 
-
 .fa-bell-o{
     font-size: 14px;   
 }
@@ -129,7 +128,33 @@ button:hover {
 	cursor: pointer;
 }
 
+/* ####################################### MENU ######################################################*/
+ .navbar-nav{
+   padding:50px;
+  .active{
+    color: red;
+  }
+ }
 
+ .active-link{
+   color: #e98f1b !important;
+ }
+
+.nav-link{
+   font-size:  18px;
+   font-family: 'Roboto';
+   font-weight: 350;  
+ }
+
+@media (min-width: 768px) {
+  .navbar-collapse{ 
+    .show{
+      padding: 20px;
+      margin-top: 2px;
+      background: #f8f9fa!important;
+    }
+  }
+}
 /* ####################################### SIDEBAR ######################################################*/
 
 .sidenav {
@@ -177,6 +202,16 @@ button:hover {
 
  .icone-centro{
      padding: 30px;
+ }
+
+ .texto-titulo{
+   font-size: 18px;
+   font-weight: lighter;
+ }
+
+ .texto-info{
+   font-size: 16px;
+   font-weight: lighter;
  }
 
 /* ######################################## ROW #########################################################*/
@@ -276,7 +311,7 @@ input[type="checkbox"]{
     padding: 1.25rem;
 }
 .card{
-
+  border-radius: 2px;
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
 	border-left: none;
 	border-right: none;
@@ -338,8 +373,6 @@ input[type="checkbox"]{
 }
 
 /* ######################################### BUTTON #####################################################*/
-
-  
   .btn {
     height: 50px;
     min-width: 100px;
@@ -350,12 +383,8 @@ input[type="checkbox"]{
 
   .btn-primary{
     background: #6675df; 
-  }
-  
-  .btn-primary:hover {
-    background: #333333;
-  }
-  
+  }  
+
 /* ############################## TABELAS ###############################################################*/
 
 thead{
@@ -388,7 +417,7 @@ thead{
 }
 
 .data-tables-clear > thead{
-  background: #f8f8f8;;    
+    background: #fff;    
 }
 
 .data-tables-clear > thead > tr > th {
