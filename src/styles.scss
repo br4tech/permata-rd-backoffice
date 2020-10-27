@@ -6,7 +6,7 @@ body{
 }
 
 h1,h2,h3,h4,h5,h6 {
-	margin: 0px;
+	margin: 15px;
 }
 
 p {
@@ -195,70 +195,7 @@ button:hover {
     flex-direction: row-reverse;
 }
 /*################################# FORMULARIOS #########################################################*/
-label{
-    font-family: Montserrat-Regular;
-    font-size: 18px;
-    color: #999999;
-    line-height: 1.2;
-  
-    display: block;
-    position: absolute;
-    pointer-events: none;
-    width: 100%;
-    padding-left: 24px;
-    left: 0;
-    top: 30px;
-  
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-}
 
-.form-group{
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    width: 100%;
-    height: 60px;
-    position: relative;
-    border: 1px solid #e6e6e6;
-    border-radius: 10px;
-    margin-bottom: 10px;
-}
-
-.form-control{
-    display: block;
-    width: 100%;
-    background: transparent;
-    font-family: Montserrat-Regular;
-    font-size: 18px;
-    color: #555555;
-    line-height: 1.2;
-    padding: 0 26px;
-    margin-bottom: 50px;
-  }
-
-  input.form-control {
-    height: 100%;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-  }
-
- select.form-control {
-    height: 100%;
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
-  }
-  
 
 /* ######################################## MODAL #####################################################*/
 .modal-content{
@@ -339,9 +276,8 @@ input[type="checkbox"]{
     padding: 1.25rem;
 }
 .card{
-    border-radius: 2px;
-	border-top: 4px solid #8cddcd;
-	box-shadow: 0 2px 1px rgba(0, 0, 0, .05);
+
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.33);
 	border-left: none;
 	border-right: none;
 	border-bottom: none;
@@ -390,7 +326,7 @@ input[type="checkbox"]{
 }
 
 .card h5{
-    margin-bottom: 0;
+  margin-bottom: 10px;
 	color: #757575;
 	font-size: 16px;	
 	display: inline-block;
@@ -403,42 +339,17 @@ input[type="checkbox"]{
 
 /* ######################################### BUTTON #####################################################*/
 
-.btn {
-    width: 100%;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
   
-  .btn-primary {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -moz-box;
-    display: -ms-flexbox;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 20px;
-    width: 100%;
+  .btn {
     height: 50px;
-    border-radius: 10px;
-    background: #6675df;
-  
-    font-family: Montserrat-Bold;
-    font-size: 12px;
-    color: #fff;
-    line-height: 1.2;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  
-    -webkit-transition: all 0.4s;
-    -o-transition: all 0.4s;
-    -moz-transition: all 0.4s;
-    transition: all 0.4s;
+    min-width: 100px;
+    border-radius: 10px;  
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .btn-primary{
+    background: #6675df; 
   }
   
   .btn-primary:hover {
@@ -477,7 +388,7 @@ thead{
 }
 
 .data-tables-clear > thead{
-    background: #fff;    
+  background: #f8f8f8;;    
 }
 
 .data-tables-clear > thead > tr > th {
