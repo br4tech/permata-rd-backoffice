@@ -1,19 +1,21 @@
-<!-- Image and text -->
-<nav class="header p-4">
-    <div class="container-fluid">
-      <!-- <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-          <span class="icon-bar"></span>
-        </button>
-      </div> -->
-      <div class="p-flex">
-        <a class="hidden-xs" href="#" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
-          <img src="../../../../assets/img/logo.png" height="45" class="d-inline-block logo" alt="">
-        </a>
-        <div class="p-flex ml-auto">
-          <app-dropdown-notificacao></app-dropdown-notificacao>
-          <app-dropdown-perfil></app-dropdown-perfil>
-        </div>
-      </div>
-    </div>
-  </nav>
+<nav class="navbar header navbar-expand-lg navbar-light bg-light">
+
+  <a class=" btn-icon-toggle menubar-toggle active" data-toggle="menubar" href="javascript:void(0);">
+    <i class="fa fa-bars"></i>
+  </a>
+  
+  <a class="navbar-brand" href="#">
+    <img src="../../../../assets/img/logo.png" height="45" class="logo" alt="">
+  </a>
+
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+    <app-dropdown-notificacao></app-dropdown-notificacao>
+    <app-dropdown-perfil></app-dropdown-perfil>  
+  </div>
+</nav>
+
+

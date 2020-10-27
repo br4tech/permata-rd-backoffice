@@ -1,0 +1,16 @@
+.page{
+  overflow: hidden;
+  width: 100%;
+  min-height: 100%;
+}
+
+.page-main{
+  position: relative;
+  width: 100%;
+  left: 0;
+  padding-top: 64px;
+}
+
+.banner{
+  background : linear-gradient(118deg, rgb(115, 103, 240), rgba(115, 103, 240, 0.7));
+}
